@@ -4,43 +4,44 @@
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <script src="https://kit.fontawesome.com/adfcfcf1c7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Hind|Playfair+Display&display=swap" rel="stylesheet">
     <title>Portfolio | Miranda Helck</title>
   </head>
   <body>
     <div class="container">
-      <ul>
+    <nav>
+      <ul class="nav_bar">
       <!---Nav bar--->
-        <li><a href="#work">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="nav_bar"><a href="#work" class="nav_element">Work</a></li>
+        <li class="nav_bar"><a href="about.html" class="nav_element">About</a></li>
+        <li class="nav_bar"><a href="contact.html" class="nav_element">Contact</a></li>
       </ul>
-      <header>
-        <h1>Miranda Helck</h1>
-        <h2 class="slogan">Product Designer</h2>
-      </header>
+    </nav>
       <main>
-        <div class="introduction">
-          <!--- Full screen introduction --->
-          <h3>Hi there! My name is Miranda and I am a designer crafting digital products with empathetic and philsophoical roots.</h3>
-          <div class="work">
+          <section class="hero">
+            <h1 class="name">Miranda Helck</h1>
+            <h2 class="slogan_a">Product Designer</h2>
+            <h2 class="slogan_b">Hi there! I am a designer crafting digital products with empathetic and philsophoical roots.</h2>
+          </section>
+          <article class="work">
             <!--- Selection of work --->
-            <a href="project1.html">
-              <img src="styles/images/HF_Homepage.png" alt="File" style="width:42px;height:42px;border:0;">
-            </a>
-            <h4>File</h4>
-            <p>File helps users efficiently organize their content and make the most of their storage space.</p>
-          </div>
-          <a href="project1.html"><button>View case study</button></a>
+            <section class="featured_project">
+              <img src="styles/images/HF_Homepage.png" alt="File" class="file">
+              <h4 class="title">File</h4>
+              <p class="project_summary">File helps users efficiently organize their content and make the most of their storage space.</p>
+              <a href="project1.html"><button>View case study</button></a>
+            </section>
+          </article>
+        </div>
       </main>
       <footer>
         <ul class="footer">
-          <li>Miranda Helck</li>
-          <li><a href="https://dribbble.com/frenchnotsnails"><i class="fab fa-dribbble"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/mirandahelck/"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://www.instagram.com/mirandaariannadesigns/"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://github.com/mirandaarianna"><i class="fab fa-github-square"></i></a></li>
+          <li class="footer"><p class="footer_element">Miranda Helck</p></li>
+          <li class="footer"><a href="https://dribbble.com/frenchnotsnails" class="footer_icon"><i class="fab fa-dribbble"></i></a></li>
+          <li class="footer"><a href="https://www.linkedin.com/in/mirandahelck/" class="footer_icon"><i class="fab fa-linkedin"></i></a></li>
+          <li class="footer"><a href="https://www.instagram.com/mirandaariannadesigns/" class="footer_icon"><i class="fab fa-instagram"></i></a></li>
+          <li class="footer"><a href="https://github.com/mirandaarianna" class="footer_icon"><i class="fab fa-github-square"></i></a></li>
         </ul>
       </footer>
-      </div>
     </body>
   </html>
