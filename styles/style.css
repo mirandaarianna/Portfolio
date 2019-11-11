@@ -33,11 +33,16 @@ h2 {
 h3 {
   font-family: 'Hind', sans-serif;
   font-size: 2.4rem;
+  font-weight: bolder;
   text-align: center;
+  text-transform: uppercase;
 }
 h4 {
   font-family: 'Hind', sans-serif;
   font-size: 2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
 }
 p{
   font-family: 'Hind', sans-serif;
@@ -60,7 +65,7 @@ padding: 6.4rem 4rem;
 }
 
 button {
-	box-shadow: 0px 16px 18px -7px #071033;
+	box-shadow: 0px 6px 8px -7px #071033;
 	background-color: #110726;
 	border-radius: 8px;
 	display: inline-block;
@@ -74,7 +79,6 @@ button {
 }
 
 .comp_analysis_img {
-  margin: auto;
 }
 .conclusion {
   margin-bottom: 5.6rem;
@@ -88,7 +92,7 @@ button {
 }
 
 div.comp_analysis_img{
-  padding-left: 20rem;
+  padding-left: 2rem;
   padding-bottom: 5.6rem;
 }
 
@@ -103,19 +107,6 @@ div.project_images img {
   height: auto;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #110726;
-}
-
-.footer {
-  display: block;
-  color: #110726;
-  padding: 1.4rem 1.6rem;
-}
 h4 {
   padding-top: 2.4rem;
   padding-bottom: 1.6rem;
@@ -161,36 +152,35 @@ img.user_research_img {
   width: 80%;
 }
 
-li.footer_icon {
+li {
   float: right;
 }
 
-li.footer_element{
+li .nav_element{
+  display: block;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li .footer_icon{
+  display: block;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li .footer_element{
+  display: block;
+  color: #F2F2F2;
   float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-
-li.nav_bar{
-  float: right;
-}
-
 .name {
   padding-top: 6.4rem;
 }
-
-.nav_element {
-  display: block;
-  color: #F1E6FF;
-  text-align: center;
-  padding: 1.4rem 1.6rem;
-  text-decoration: none;
-
-}
-
-nav {
-  position: fixed;
-  background-color: #110726;
-}
-
 
 .project_summary {
   padding-top: 2.4rem;
@@ -198,7 +188,8 @@ nav {
 }
 
 section {
-  padding: 2.4rem 3.2rem;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
 }
 
 .slogan_a {
@@ -214,15 +205,24 @@ section {
   padding: 6.4rem 4rem;
 }
 
-ul {
+ul.nav_bar {
+  width: 100%;
   position: fixed;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #110726;
-  float: right;
 }
+ul.footer {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #110726;
+}
+
 .wireframe_img, .mockup_img {
   object-fit: cover;
 }
