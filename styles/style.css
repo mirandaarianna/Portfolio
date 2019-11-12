@@ -13,9 +13,11 @@ html {
 
 /*** typogaphy ***/
 a {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
+  text-decoration: none;
+  color: #110726;
 }
 
 h1 {
@@ -29,24 +31,28 @@ h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
   text-align: left;
+  line-height: 1.5;
 }
 h3 {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 2.4rem;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  color: #110726;
 }
 h4 {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 2rem;
-  font-weight: bolder;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  color: #110726;
 }
 p{
-  font-family: 'Hind', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 1.2rem;
+  color: #110726;
 }
 p.resume_header {
   font-size: 1.6rem;
@@ -64,6 +70,10 @@ article {
 padding: 6.4rem 4rem;
 }
 
+.branding_img {
+  display: inline-block;
+  padding: 4rem auto;
+}
 button {
 	box-shadow: 0px 6px 8px -7px #071033;
 	background-color: #110726;
@@ -74,12 +84,16 @@ button {
 	font-family: Hind;
 	font-size: 1.2rem;
 	font-weight: bold;
-	padding: 1.6rem 2.4rem;
+	padding: 1.6rem 4rem;
 	text-decoration: none;
 }
 
-.comp_analysis_img {
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
+
 .conclusion {
   margin-bottom: 5.6rem;
 }
@@ -91,20 +105,63 @@ button {
   width: 100%;
 }
 
-div.comp_analysis_img{
-  padding-left: 2rem;
-  padding-bottom: 5.6rem;
+div.comp_analysis_gal {
+  display: inline-block;
+  margin: 1.6rem;
+  width: 24rem;
 }
 
-div.project_images {
-  display: inline;
-  margin: 5px;
-  width: 180px;
-}
-
-div.project_images img {
+div.comp_analysis_gal img {
   width: 100%;
   height: auto;
+}
+
+div.desc {
+  padding: 1.6rem;
+  text-align: center;
+}
+
+div.hifi_gal {
+  display: inline-block;
+  margin: 1.6rem;
+  width: 40rem;
+  padding-left: 4rem;
+}
+
+div.hifi_gal img {
+  width: 100%;
+  height: auto;
+
+}
+
+div.personas_gal {
+  display: inline-block;
+  margin: 1.6rem;
+  width: 40rem;
+  padding-left: 4rem;
+
+}
+
+div.personas_gal img {
+  width: 100%;
+  height: auto;
+}
+div.wireframe_gal {
+  display: inline-block;
+  margin: 1.6rem;
+  width: 40rem;
+  padding-left: 4rem;
+
+}
+
+div.wireframe_gal img {
+  width: 100%;
+  height: auto;
+}
+
+.experience{
+  padding-top: 8rem;
+  padding-bottom: 2.4rem;
 }
 
 h4 {
@@ -129,6 +186,7 @@ img {
   margin-right: auto;
   margin-top: 2.4rem;
   margin-bottom: 2.4rem;
+  object-fit: cover;
   height: 25%;
   width: 40%;
 }
@@ -153,6 +211,7 @@ img.user_research_img {
 }
 
 li {
+  color: #F2F2F2;
   float: right;
 }
 
@@ -182,6 +241,10 @@ li .footer_element{
   padding-top: 6.4rem;
 }
 
+p{
+  padding: 1.6rem 4rem;
+}
+
 .project_summary {
   padding-top: 2.4rem;
   padding-bottom: 2.4rem;
@@ -205,6 +268,16 @@ section {
   padding: 6.4rem 4rem;
 }
 
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.resume_date {
+  padding-bottom: 0;
+}
+
 ul.nav_bar {
   width: 100%;
   position: fixed;
@@ -223,6 +296,61 @@ ul.footer {
   background-color: #110726;
 }
 
-.wireframe_img, .mockup_img {
-  object-fit: cover;
+@media screen and (min-width: 99.1rem){
+  a {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #110726;
+  }
+
+  h1 {
+    color: #F1E6FF;
+    font-family: 'Playfair Display', serif;
+    font-size: 6.4rem;
+    text-align: center;
+  }
+  h2 {
+    color: #F1E6FF;
+    font-family: 'Playfair Display', serif;
+    font-size: 5.6rem;
+    text-align: left;
+    line-height: 1.5;
+  }
+  h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #110726;
+  }
+  h4 {
+    font-family: 'Muli', sans-serif;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #110726;
+  }
+  p{
+    font-family: 'Muli', sans-serif;
+    font-size: 1.6rem;
+    color: #110726;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
 }
