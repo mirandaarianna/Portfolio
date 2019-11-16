@@ -4,48 +4,50 @@
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <script src="https://kit.fontawesome.com/adfcfcf1c7.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Hind|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900|Playfair+Display:400,700,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio | Miranda Helck</title>
   </head>
   <body>
-    <div class="container">
     <nav>
       <ul class="nav_bar">
       <!---Nav bar--->
-        <li class="nav_bar"><a href="index.html">Work</a></li>
-        <li class="nav_bar"><a href="about.html">About</a></li>
-        <li class="nav_bar"><a href="contact.html">Contact</a></li>
+        <li class="nav_bar"><img src="styles/images/Logo_Light_Purple_Navbar.png" class="nav_logo"></li>
+        <li class="nav_bar"><a href="index.html" class="nav_element">Work</a></li>
+        <li class="nav_bar"><a href="about.html" class="nav_element">About</a></li>
+        <li class="nav_bar"><a href="index.html" class="nav_element">Contact</a></li>
       </ul>
     </nav>
-        <header>
-          <!--- Full screen introduction with summary --->
-          <section class="hero">
-            <h1>About Me</h1>
-            <h2 class="about_intro">I am a designer, writer, and pop culture enthusiast based out of Philadelphia. I design helpful and striking digital products that promote positive change. I believe that great design isn’t a luxury- it’s a necessity. Great design is an effective, affordable, and easily utilized tool that can improve lives.<br>This site showcases my latest work, feel free to reach out to me if you have any questions or just to say hello!</h2>
-          </section>
-        </header>
+      <div class="container">
+          <article class="hero">
+            <h1 class="about_title">About Me</h1>
+            <h2 class="about_intro">I am a designer, writer, and pop culture enthusiast based out of Philadelphia. I design helpful and striking digital products that promote positive change.</h2>
+          </article>
         <main>
           <!--- biography --->
-          <section class="biography">
+          <article class="about_me">
+            <section class="biography">
             <img src="styles/images/Me_lol.jpeg" alt="Me after a cocktail competition">
-            <p>With a Bachelor’s degree in Classics and a past career in high-end hospitality, my non-traditional experience has given me a unique perspective on user experience design. I have crafted incredible hospitality experiences- from themed pop-up bars to full restaurant beverage programs. I designed spaces and programs to fulfill both the needs of my owners and investors and the needs of our guests.</p>
-            <p>I knew that there was always room for growth and being able to directly interact with my customers and observe them interacting with my products has been an essential aspect in leading a successful program. I learned so much from those guest interactions and it extended beyond the conversation. I was able to empathize with the guests and appreciate their point of view, engendering a feeling of trust. It was fulfilling to offer an enjoyable experience to those that I served, in all capacities, ranging from the guest to my fellow members of my service team.</p>
-            <p>I want to solve problems in medical, civic, and political realms.  I want to use my experience and empathy to help my community, bring easy interactions and accessibility to projects that can help those in need.</p>
+            <p class="bio_text">I believe that great design isn’t a luxury- it’s a necessity. Great design is an effective, affordable, and easily utilized tool that can improve lives.</p>
+            <p class="bio_text">With a Bachelor’s degree in Classics and a past career in high-end hospitality, my non-traditional experience has given me a unique perspective on user experience design. I have crafted incredible hospitality experiences- from themed pop-up bars to full restaurant beverage programs. I designed spaces and programs to fulfill both the needs of my owners and investors and the needs of our guests.</p>
+            <p class="bio_text">I knew that there was always room for growth and being able to directly interact with my customers and observe them interacting with my products has been an essential aspect in leading a successful program. I learned so much from those guest interactions and it extended beyond the conversation. I was able to empathize with the guests and appreciate their point of view, engendering a feeling of trust. It was fulfilling to offer an enjoyable experience to those that I served, in all capacities, ranging from the guest to my fellow members of my service team.</p>
+            <p class="bio_text">I want to solve problems in medical, civic, and political realms.  I want to use my experience and empathy to help my community, bring easy interactions and accessibility to projects that can help those in need.</p>
           </section>
           <section class="experience">
-              <h3>Experience</h3>
+              <h3 class="exp_header">Experience</h3>
               <!--- resume --->
 
-                <p class="resume_header">Bloc, Remote UX Design Program</p>
+                <p class="resume_header">Bloc, UX Design Program</p>
                 <p class="resume_date">March 2019 to Present</p>
-                <p>Learned industry best practices and design process standards with a focus on UX research, visual design, and front-end development.</p><br>
-                <p class="resume_header">The Franklin Bar, Philadelphia, PA General Manager</p>
+                <p class="duties">Learned industry best practices and design process standards with a focus on UX research, visual design, and front-end development.</p><br>
+                <p class="resume_header">The Franklin Bar, General Manager</p>
+                <p class="resume_date">Philadelphia, PA</p>
                 <p class="resume_date">February 2018 to Present</p>
-                <p>Led a team of 20+ hospitality professionals designed service standards and enforced best hospitality practices.<br>Led menu development and design.</p><br>
-                <p class="resume_header">Kingsley, New York, NY Beverage Manager</p>
+                <p class="duties">Led a team of 20+ hospitality professionals designed service standards and enforced best hospitality practices.<br>Led menu development and design.</p><br>
+                <p class="resume_header">Kingsley, Beverage Manager</p>
+                <p class="resume_date">New York, NY</p>
                 <p class="resume_date">February 2016 to January 2018</p>
-                <p>Led menu development and design including cocktail creation, wine, spirits, and beer offerings. <br>Designed steps of service in line with hospitality standards.</p>
-              </ul>
+                <p class="duties">Led menu development and design including cocktail creation, wine, spirits, and beer offerings. <br>Designed steps of service in line with hospitality standards.</p>
           </section>
           <section class="skills">
             <h3>Skills</h3>
@@ -56,6 +58,7 @@
                 <p class="resume_header">Frontend</p>
                 <p class="skills_list">HTML5, CSS3, Javascript, Github, Git, Chrome Dev Tools</p>
           </section>
+        </article>
       </main>
     </div>
       <footer>
