@@ -22,21 +22,22 @@ a {
 
 h1 {
   color: #F1E6FF;
+  font-weight: bold;
   font-family: 'Playfair Display', serif;
-  font-size: 5.6rem;
+  font-size: 3.2rem;
   text-align: center;
 }
 h2 {
   color: #F1E6FF;
   font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   text-align: left;
   line-height: 1.5;
 }
 h3 {
   font-family: 'Muli', sans-serif;
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   color: #110726;
@@ -44,7 +45,7 @@ h3 {
 h4 {
   font-family: 'Muli', sans-serif;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   color: #110726;
@@ -59,17 +60,36 @@ p.resume_header {
   font-weight: bold;
 }
 p.resume_date {
-  font-weight: lighter;
+  font-weight: 200;
   text-transform: uppercase;
 }
 
+.slogan_b {
+  color: #110726;
+}
 
 
 /*** structure ***/
-article {
-padding: 6.4rem 4rem;
+.about_title {
+  padding-top: 4rem;
+  padding-bottom: 2.4rem;
 }
 
+.about_intro {
+  padding-bottom: 4rem;
+}
+.about_me {
+  padding-top: 1.6rem;
+}
+article {
+  padding-top: 4rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+p.bio_text {
+  padding-top: 1.6rem;
+}
 .branding_img {
   display: inline-block;
   padding: 4rem auto;
@@ -81,10 +101,11 @@ button {
 	display: inline-block;
 	cursor: pointer;
 	color:#F2F2F2;
-	font-family: Hind;
-	font-size: 1.2rem;
+	font-family: 'Muli', sans-serif;
+	font-size: .8rem;
 	font-weight: bold;
-	padding: 1.6rem 4rem;
+  margin-left: 3.2rem;
+	padding: .8rem 1.6rem;
 	text-decoration: none;
 }
 
@@ -98,61 +119,58 @@ button {
   margin: 0 auto;
   width: 100%;
 }
+#contact {
+  padding-bottom: 4rem;
+}
+.contact_links {
+  padding-top: 1.6rem;
+}
 
 div.comp_analysis_gal {
   display: inline-block;
-  margin: 1.6rem;
-  width: 24rem;
+  width: 9.6rem;
 }
 
 div.comp_analysis_gal img {
   width: 100%;
   height: auto;
+  padding-left: 3.2rem;
 }
 
 div.desc {
-  padding: 1.6rem;
+  margin: auto;
   text-align: center;
 }
 
 div.hifi_gal {
   display: inline-block;
-  margin: 1.6rem;
-  width: 40rem;
-  padding-left: 4rem;
 }
 
 div.hifi_gal img {
-  width: 100%;
+  width: 40%;
   height: auto;
-
 }
 
 div.personas_gal {
-  display: inline-block;
-  margin: 1.6rem;
-  width: 40rem;
-  padding-left: 4rem;
-
+  display: inline;
 }
 
 div.personas_gal img {
-  width: 100%;
+  width: 40%;
   height: auto;
 }
 div.wireframe_gal {
   display: inline-block;
-  margin: 1.6rem;
-  width: 40rem;
-  padding-left: 4rem;
-
 }
 
 div.wireframe_gal img {
-  width: 100%;
+  width: 40%;
   height: auto;
 }
 
+.exp_header {
+  padding-bottom: 1.6rem;
+}
 .experience{
   padding-top: 8rem;
   padding-bottom: 2.4rem;
@@ -168,9 +186,8 @@ header {
 }
 
 .hero {
-    background-color: #110726;
+    background: linear-gradient(180deg, #180333 0%, rgba(30, 4, 64, 0.95) 45.83%, #180333 100%);
     margin: auto;
-    padding: 9.6rem;
     width: 100%;
   }
 
@@ -188,12 +205,12 @@ img {
 img.comp_analysis_img {
   display: inline-block;
   padding:4rem;
-  width: 40%;
+  width: 10%;
 }
 
 img.file {
-  height: 50rem;
-  width: 32%;
+  height: 22.5rem;
+  width: 80%;
 }
 
 img.solution_img {
@@ -206,7 +223,6 @@ img.user_research_img {
 
 li {
   color: #F2F2F2;
-  float: right;
 }
 
 li .nav_element{
@@ -215,38 +231,50 @@ li .nav_element{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  float: right;
 }
 li .footer_icon{
   display: block;
+  float: left;
   color: #F2F2F2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 8px;
   text-decoration: none;
 }
 li .footer_element{
   display: block;
   color: #F2F2F2;
-  float: left;
+  float: right;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 .name {
-  padding-top: 6.4rem;
+  padding-top: 14rem;
 }
-
-p{
-  padding: 1.6rem 4rem;
+.nav_logo {
+margin-top: .4rem;
+margin-left: .8rem;
+margin-bottom: .4rem;
+margin-right: 0;
 }
+img.nav_logo {
+  width: 4rem;
+  height: auto;
+}
+li .nav_logo {
+  float: left;
 
+}
 .project_summary {
   padding-top: 2.4rem;
   padding-bottom: 2.4rem;
 }
-
+.project_title {
+  padding-top: 4rem;
+}
 section {
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
+  padding-top: 3.2rem;
 }
 
 .slogan_a {
@@ -254,16 +282,20 @@ section {
   padding: 6.4rem;
 }
 
-.slogan_b {
-  padding-bottom: 6.4rem;
-}
-
 .summary {
   padding: 6.4rem 4rem;
 }
 
 .resume_date {
-  padding-bottom: 0;
+  padding-bottom: .8rem;
+}
+
+.resume_header{
+  padding-bottom: 1.6rem;
+}
+
+.skills {
+  padding-bottom: 3.2rem;
 }
 
 ul.nav_bar {
@@ -275,6 +307,7 @@ ul.nav_bar {
   overflow: hidden;
   background-color: #110726;
 }
+
 ul.footer {
   width: 100%;
   list-style-type: none;
