@@ -17,7 +17,7 @@ a {
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
-  color: #110726;
+  color: #180333;
 }
 
 h1 {
@@ -30,7 +30,7 @@ h1 {
 h2 {
   color: #F1E6FF;
   font-family: 'Playfair Display', serif;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   text-align: left;
   line-height: 1.5;
 }
@@ -40,7 +40,7 @@ h3 {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  color: #110726;
+  color: #180333;
 }
 h4 {
   font-family: 'Muli', sans-serif;
@@ -48,12 +48,16 @@ h4 {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  color: #110726;
+  color: #180333;
+}
+
+.nav_element {
+  font-size: .8rem;
 }
 p{
   font-family: 'Muli', sans-serif;
   font-size: 1.2rem;
-  color: #110726;
+  color: #180333;
 }
 p.resume_header {
   font-size: 1.6rem;
@@ -65,7 +69,7 @@ p.resume_date {
 }
 
 .slogan_b {
-  color: #110726;
+  color: #180333;
 }
 
 
@@ -94,9 +98,10 @@ p.bio_text {
   display: inline-block;
   padding: 4rem auto;
 }
+
 button {
 	box-shadow: 0px 6px 8px -7px #071033;
-	background-color: #110726;
+	background-color: #180333;
 	border-radius: 8px;
 	display: inline-block;
 	cursor: pointer;
@@ -126,46 +131,9 @@ button {
   padding-top: 1.6rem;
 }
 
-div.comp_analysis_gal {
-  display: inline-block;
-  width: 9.6rem;
-}
-
-div.comp_analysis_gal img {
-  width: 100%;
-  height: auto;
-  padding-left: 3.2rem;
-}
-
 div.desc {
   margin: auto;
   text-align: center;
-}
-
-div.hifi_gal {
-  display: inline-block;
-}
-
-div.hifi_gal img {
-  width: 40%;
-  height: auto;
-}
-
-div.personas_gal {
-  display: inline;
-}
-
-div.personas_gal img {
-  width: 40%;
-  height: auto;
-}
-div.wireframe_gal {
-  display: inline-block;
-}
-
-div.wireframe_gal img {
-  width: 40%;
-  height: auto;
 }
 
 .exp_header {
@@ -182,7 +150,7 @@ h4 {
 }
 header {
   width: 100%;
-  background-color: #110726;
+  background-color: #180333;
 }
 
 .hero {
@@ -200,12 +168,6 @@ img {
   object-fit: cover;
   height: 25%;
   width: 40%;
-}
-
-img.comp_analysis_img {
-  display: inline-block;
-  padding:4rem;
-  width: 10%;
 }
 
 img.file {
@@ -229,7 +191,7 @@ li .nav_element{
   display: block;
   color: #F2F2F2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 16px;
   text-decoration: none;
   float: right;
 }
@@ -246,7 +208,7 @@ li .footer_element{
   color: #F2F2F2;
   float: right;
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 16px;
   text-decoration: none;
 }
 .name {
@@ -259,7 +221,7 @@ margin-bottom: .4rem;
 margin-right: 0;
 }
 img.nav_logo {
-  width: 4rem;
+  width: 2.4rem;
   height: auto;
 }
 li .nav_logo {
@@ -305,7 +267,7 @@ ul.nav_bar {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #110726;
+  background-color: #180333;
 }
 
 ul.footer {
@@ -314,9 +276,181 @@ ul.footer {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #110726;
+  background-color: #180333;
 }
 
 .wireframe_img, .mockup_img {
   object-fit: cover;
+}
+/***images***/
+#dropbox_logo {
+  background-image: url('images/dropboxlogo 1.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  height: 6rem;
+  width: 100%;
+  background-size: cover;
+}
+
+#google_logo {
+  background-image: url('images/Google Drive Logo 1.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  height: 6rem;
+  width: 100%;
+  background-size: cover;
+}
+
+#box_logo {
+  background-image: url('images/box cloud logo 1.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  height: 6rem;
+  width: 100%;
+  background-size: cover;
+}
+
+#personas_janessa {
+  background-image: url('images/Janessa Persona.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+}
+
+#personas_theo {
+  background-image: url('images/Theo Persona.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+}
+
+#wireframe_cc {
+  background-image: url('images/WF_CC_info.jpg');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+}
+
+#wireframe_dash {
+  background-image: url('images/WF Dashboard.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+}
+
+#wireframe_settings {
+  background-image: url('images/WF Settings.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+}
+
+#wireframe_landing {
+  background-image: url('images/WF Landing Page revised.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+}
+
+#highfi_dashboard {
+  background-image: url('images/HF_Dashboard.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+}
+
+#highfi_sharing {
+  background-image: url('images/HF_Document_Sharing_settings.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+}
+
+#highfi_doc_display {
+  background-image: url('images/HF_Document_Display.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+}
+
+#highfi_signup {
+  background-image: url('images/HF_Sign_In_Up.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+}
+/***responsive***/
+
+@media screen and (min-width: 575px){
+  /*** typography ***/
+  h1 {
+    font-size: 5.6rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 3.2rem;
+  }
+
+  h4 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  p.resume_header {
+    font-size: 2rem;
+  }
+/*** structure ***/
+.responsive_wf .responsive_hf .responsive_personas {
+  column-count: 2;
+}
+
+#personas_theo #personas_janessa #wireframe_cc #wireframe_settings #wireframe_dash #wireframe_landing #highfi_signup #highfi_sharing #highfi_dashboard #highfi_doc_display {
+  width: 50%;
+}
+
+  img.nav_logo {
+    width: 3.2rem;
+    height: auto;
+  }
+
 }

@@ -12,7 +12,7 @@
   <nav>
     <ul class="nav_bar">
     <!---Nav bar--->
-      <li class="nav_bar"><img src="styles/images/Logo_Light_Purple_Navbar.png" class="nav_logo"></li>
+      <li class="nav_bar"><img src="styles/images/Logo_Light_Purple_Navbar.png" alt="logo" class="nav_logo"></li>
       <li class="nav_bar"><a href="index.html" class="nav_element">Work</a></li>
       <li class="nav_bar"><a href="about.html" class="nav_element">About</a></li>
       <li class="nav_bar"><a href="index.html" class="nav_element">Contact</a></li>
@@ -45,29 +45,29 @@
                   The survey reached over 40 users. Almost all polled (96%) used more than one cloud service; nearly 90% of users used Google Drive, while 75% used DropBox and the 6% used other services such as iCloud, Figma, Box, and Evernote. Aside from space, users also complained about their cloud service not being intuitively organized and the folder structure being “difficult to traverse”.</p>
                 </section>
                 <section class="comp_analysis">
-                  <div class="comp_analysis_gal">
-                    <img src="styles/images/dropboxlogo 1.png" alt="Dropbox" width="600" height="400">
-                    <div class="desc"><p>Dropbox</p></div>
-                  </div>
-                  <div class="comp_analysis_gal">
-                    <img src="styles/images/Google Drive Logo 1.png" alt="Google Drive" width="600" height="400">
-                    <div class="desc"><p>Google Drive</p></div>
-                  </div>
-                  <div class="comp_analysis_gal">
-                    <img src="styles/images/box cloud logo 1.png" alt="Box" width="600" height="400">
-                    <div class="desc"><p>Box</p></div>
+                  <div class="responsive_comp">
+                    <div id="dropbox_logo">
+                      </div>
+                      <div class="desc"><p>Dropbox</p></div>
+                    <div id="google_logo">
+                    </div>
+                      <div class="desc"><p>Google Drive</p>
+                      </div>
+                    <div id="box_logo">
+                    </div>
+                      <div class="desc"><p>Box</p></div>
                   </div>
                   <h4>Competitve Analysis</h4>
                   <p>I opted to research Google Drive, Dropbox, and Box. There was a fair amount of consistency throughout their product features, all offered the ability to create documents within their service, easily allowed users to share documents and ownership. The three competitors differed in their expertise Google Drive offered the most amount of free space, Dropbox was geared towards smaller teams and freelancers, and Box was the best option for larger businesses as they offered multiple pricing tiers and complex security features. It was clear that to compete, a new service would have to offer something that set itself apart. Read a more in-depth analysis <a href="https://drive.google.com/open?id=1WlHmIGxGVr7P-blwS9qKLj2pMQLBZmky">here</a>.</p>
                 </section>
                 <section class="personas">
-                  <div class="personas_gal">
-                    <a target="_blank" href="styles/images/Janessa Persona.png">
-                      <img src="styles/images/Janessa Persona.png" alt="Persona" width="600" height="400" class="persona_img">
-                  </div>
-                  <div class="personas_gal">
-                    <a target="_blank" href="styles/images/Theo Persona.png">
-                      <img src="styles/images/Theo Persona.png" alt="Persona" width="600" height="400" class="persona_img">
+                  <div class="responsive_personas">
+                    <div id="personas_janessa">
+                      <a target="_blank" href="styles/images/Janessa Persona.png"></a>
+                    </div>
+                    <div id="personas_theo">
+                      <a target="_blank" href="styles/images/Theo Persona.png"></a>
+                    </div>
                   </div>
                   <h4>User Personas</h4>
                   <p>In an effort to flesh out a more detailed target audience, I interviewed 4 of the individuals I had surveyed. I asked more in-depth questions and actually prompted them to explore their main cloud storage services to see if there was “digital dead weight”. From these answers, I crafted a few user personas. My user personas were individuals from various backgrounds but who all struggled with keeping their documents organized.</p>
@@ -75,29 +75,23 @@
                 <section class="stories_flows">
                   <h4>User Stories and Flows</h4>
                   <p>After completing the personas, I was able to identify File’s MVP and create user stories and flows to set the groundwork for the visual design.</p>
-                  <a href="https://docs.google.com/spreadsheets/d/1UJTHBuGGZYuwoenj3arMb6Ge42_kqz1XaFV_f4Q2CwA/edit?usp=sharing"><p>User Stories</p></a>
+                  <a href="https://docs.google.com/spreadsheets/d/1UJTHBuGGZYuwoenj3arMb6Ge42_kqz1XaFV_f4Q2CwA/edit?usp=sharing"><br><p>User Stories</p></a>
                   <a href="https://drive.google.com/open?id=120w5vlCslZYtvvS6dxz-rwn5w9b__qvx"><p>User Flows</p></a>
                 </section>
-                <section class="wireframes">
-                  <div class="wireframe_gal">
-                    <a target="_blank" href="styles/images/WF_CC_info.jpg">
-                      <img src="styles/images/WF Dashboard.png" alt="Dashboard Wireframe" class="wireframe_img" width="600" height="400">
-                    <div class="desc"><p>Dashboard</p></div></a>
-                  </div>
-                  <div class="wireframe_gal">
-                    <a target="_blank" href="styles/images/WF_CC_info.jpg">
-                      <img src="styles/images/WF Landing Page revised.png" alt="Landing Page" class="wireframe_img" width="600" height="400">
-                    <div class="desc"><p>Landing Page</p></div></a>
-                  </div>
-                  <div class="wireframe_gal">
-                    <a target="_blank" href="styles/images/WF_CC_info.jpg">
-                      <img src="styles/images/WF Settings.png" alt="Settings" width="600" height="400">
-                    <div class="desc"><p>Settings</p></div></a>
-                  </div>
-                  <div class="wireframe_gal">
-                    <a target="_blank" href="styles/images/WF_CC_info.jpg">
-                      <img src="styles/images/WF_CC_info.jpg" alt="Credit Card Info" width="600" height="400">
-                    <div class="desc"><p>Credit Card Information Form</p></div></a>
+                <section class="mockups">
+                  <div class="responsive_wf">
+                      <div id="wireframe_cc">
+                        <a target="_blank" href="styles/images/WF_CC_info.jpg"></a>
+                      </div>
+                    <div id="wireframe_dash">
+                        <a target="_blank" href="styles/images/WF Dashboard.png"></a>
+                      </div>
+                    <div id="wireframe_settings">
+                        <a target="_blank" href="styles/images/WF Settings.png"></a>
+                    </div>
+                    <div id="wireframe_landing">
+                        <a target="_blank" href="styles/images/WF Landing Page revised.png"></a>
+                    </div>
                   </div>
                   <h4>Wireframes</h4>
                   <p>From the creation of my user stories and flows, I was able to construct the bones of what would become File. I was able to construct a basic user flow and the general idea of how I wanted the product to work.</p>
@@ -117,26 +111,20 @@
                     After a few iterations, I opted to design a file folder logo for File. The arrow replaces the tab to insinuate files being dropped into the cloud, and it uses the brand colors in a playful way.
                     View my full style guide <a href="https://drive.google.com/open?id=1XUHX2QXUn4c0mziFxUTLl8FFZW7zpGRm">here</a>.</p>
                   </section>
-                  <section class="hf_mockups">
-                    <div class="hifi_gal">
-                      <a target="_blank" href="styles/images/HF_Dashboard.png">
-                        <img src="styles/images/HF_Dashboard.png" alt="Dashboard" width="600" height="400">
-                      <div class="desc"><p>Dashboard</p></div></a>
+                  <section class="mockups">
+                    <div class="responsive_hf">
+                      <div id="highfi_dashboard">
+                        <a target="_blank" href="styles/images/HF_Dashboard.png"></a>
                       </div>
-                      <div class="hifi_gal">
-                        <a target="_blank" href="styles/images/HF_Document_Sharing_settings.png">
-                        <img src="styles/images/HF_Document_Sharing_settings.png" alt="Credit Card Info" width="600" height="400">
-                        <div class="desc"><p>Sharing Settings</p></div></a>
+                      <div id="highfi_sharing">
+                          <a target="_blank" href="styles/images/HF_Document_Sharing_settings.png"></a>
                       </div>
-                      <div class="hifi_gal">
-                        <a target="_blank" href="styles/images/HF_Document_Display.png">
-                          <img src="styles/images/HF_Document_Display.png" alt="Document Display" width="600" height="400">
-                          <div class="desc"><p>Document Display</p></div></a>
+                      <div id="highfi_doc_display">
+                          <a target="_blank" href="styles/images/HF_Document_Display.png"></a>
                       </div>
-                      <div class="hifi_gal">
-                        <a target="_blank" href="styles/images/HF_Sign_In_Up.png">
-                        <img src="styles/images/HF_Sign_In_Up.png" alt="Sign In and Up" width="600" height="400">
-                        <div class="desc"><p>Sign In & Sign Up</p></div></a>
+                      <div id="highfi_signup">
+                          <a target="_blank" href="styles/images/HF_Sign_In_Up.png"></a>
+                      </div>
                       </div>
                     <h4>High Fidelity Mockups</h4>
                     <p>My next steps were to combine my visual and branding standards and my wireframes in Figma to make high fidelity visual mockups and turn them into a working prototype in InVision.
