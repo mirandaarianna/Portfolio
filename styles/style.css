@@ -148,6 +148,11 @@ h4 {
   padding-top: 2.4rem;
   padding-bottom: 1.6rem;
 }
+
+h3 {
+  padding-bottom: 1.6rem;
+}
+
 header {
   width: 100%;
   background-color: #180333;
@@ -159,29 +164,6 @@ header {
     width: 100%;
   }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2.4rem;
-  margin-bottom: 2.4rem;
-  object-fit: cover;
-  height: 25%;
-  width: 40%;
-}
-
-img.file {
-  height: 22.5rem;
-  width: 80%;
-}
-
-img.solution_img {
-    width: 80%;
-}
-
-img.user_research_img {
-  width: 80%;
-}
 
 li {
   color: #F2F2F2;
@@ -217,7 +199,7 @@ li .footer_element{
 .nav_logo {
 margin-top: .4rem;
 margin-left: .8rem;
-margin-bottom: .4rem;
+margin-bottom: 0;
 margin-right: 0;
 }
 img.nav_logo {
@@ -227,6 +209,10 @@ img.nav_logo {
 li .nav_logo {
   float: left;
 
+}
+
+#personas_janessa {
+  padding-right: 1.6rem;
 }
 .project_summary {
   padding-top: 2.4rem;
@@ -252,7 +238,25 @@ section {
   padding-bottom: .8rem;
 }
 
-.resume_header{
+.responsive_personas {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.responsive_hf {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.responsive_wf {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.resume_header {
   padding-bottom: 1.6rem;
 }
 
@@ -279,39 +283,8 @@ ul.footer {
   background-color: #180333;
 }
 
-.wireframe_img, .mockup_img {
-  object-fit: cover;
-}
+
 /***images***/
-#dropbox_logo {
-  background-image: url('images/dropboxlogo 1.png');
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  margin-bottom: 10px;
-  height: 6rem;
-  width: 100%;
-  background-size: cover;
-}
-
-#google_logo {
-  background-image: url('images/Google Drive Logo 1.png');
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  margin-bottom: 10px;
-  height: 6rem;
-  width: 100%;
-  background-size: cover;
-}
-
-#box_logo {
-  background-image: url('images/box cloud logo 1.png');
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  margin-bottom: 10px;
-  height: 6rem;
-  width: 100%;
-  background-size: cover;
-}
 
 #personas_janessa {
   background-image: url('images/Janessa Persona.png');
@@ -320,7 +293,7 @@ ul.footer {
   margin-bottom: 10px;
   height: 40rem;
   width: 100%;
-  background-size: cover;
+  background-size: contain;
 }
 
 #personas_theo {
@@ -330,7 +303,7 @@ ul.footer {
   margin-bottom: 10px;
   height: 40rem;
   width: 100%;
-  background-size: cover;
+  background-size: contain;
 }
 
 #wireframe_cc {
@@ -412,6 +385,31 @@ ul.footer {
   width: 100%;
   background-size: cover;
 }
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  object-fit: cover;
+  height: 25%;
+  width: 40%;
+}
+
+img.file {
+  height: 22.5rem;
+  width: 80%;
+}
+
+img.solution_img {
+    width: 80%;
+}
+
+img.user_research_img {
+  width: 80%;
+}
 /***responsive***/
 
 @media screen and (min-width: 575px){
@@ -425,27 +423,23 @@ ul.footer {
   }
 
   h3 {
-    font-size: 3.2rem;
-  }
-
-  h4 {
     font-size: 2.4rem;
   }
 
+  h4 {
+    font-size: 1.8rem;
+  }
+
   p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   p.resume_header {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
-/*** structure ***/
-.responsive_wf .responsive_hf .responsive_personas {
-  column-count: 2;
-}
 
-#personas_theo #personas_janessa #wireframe_cc #wireframe_settings #wireframe_dash #wireframe_landing #highfi_signup #highfi_sharing #highfi_dashboard #highfi_doc_display {
-  width: 50%;
+.responsive_hf .responsive_wf .responsive_personas {
+  flex-direction: row;
 }
 
   img.nav_logo {
@@ -453,4 +447,13 @@ ul.footer {
     height: auto;
   }
 
+}
+
+@media screen and (min-width: 991px){
+
+  #wireframe_cc #wireframe_settings #wireframe_dash #wireframe_landing #highfi_signup #highfi_sharing #highfi_dashboard #highfi_doc_display {
+    width: 25%;
+    height: auto;
+
+  }
 }
