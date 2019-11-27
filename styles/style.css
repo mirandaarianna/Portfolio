@@ -53,6 +53,7 @@ h4 {
 
 .nav_element {
   font-size: .8rem;
+  padding-bottom: .8rem;
 }
 p{
   font-family: 'Muli', sans-serif;
@@ -75,12 +76,13 @@ p.resume_date {
 
 /*** structure ***/
 .about_title {
-  padding-top: 4rem;
+  padding-top: 6.4rem;
   padding-bottom: 2.4rem;
 }
 
 .about_intro {
-  padding-bottom: 4rem;
+  padding-top: 4rem;
+
 }
 .about_me {
   padding-top: 1.6rem;
@@ -100,7 +102,6 @@ p.bio_text {
 }
 
 button {
-	box-shadow: 0px 6px 8px -7px #071033;
 	background-color: #180333;
 	border-radius: 8px;
 	display: inline-block;
@@ -162,6 +163,7 @@ header {
     background: linear-gradient(180deg, #180333 0%, rgba(30, 4, 64, 0.95) 45.83%, #180333 100%);
     margin: auto;
     width: 100%;
+    height: 100vh
   }
 
 
@@ -173,7 +175,9 @@ li .nav_element{
   display: block;
   color: #F2F2F2;
   text-align: center;
-  padding: 8px 16px;
+  padding-top: 1.6rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
   text-decoration: none;
   float: right;
 }
@@ -194,7 +198,7 @@ li .footer_element{
   text-decoration: none;
 }
 .name {
-  padding-top: 14rem;
+  padding-top: 24rem;
 }
 .nav_logo {
 margin-top: .4rem;
@@ -238,24 +242,6 @@ section {
   padding-bottom: .8rem;
 }
 
-.responsive_personas {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.responsive_hf {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.responsive_wf {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
-}
 .resume_header {
   padding-bottom: 1.6rem;
 }
@@ -283,124 +269,60 @@ ul.footer {
   background-color: #180333;
 }
 
+/***flexbox image galleries for project.html***/
+
+.img_gal_flex {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.flexi {
+  width: calc(100% - 1.6rem);
+  margin: .8rem
+}
+
+.branding_imgs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.responsive_personas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.persona {
+  width: calc(50% - 1.6rem);
+  margin: .8rem;
+}
 
 /***images***/
 
-#personas_janessa {
-  background-image: url('images/Janessa Persona.png');
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  margin-bottom: 10px;
-  height: 40rem;
-  width: 100%;
-  background-size: contain;
-}
-
-#personas_theo {
-  background-image: url('images/Theo Persona.png');
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  margin-bottom: 10px;
-  height: 40rem;
-  width: 100%;
-  background-size: contain;
-}
-
-#wireframe_cc {
-  background-image: url('images/WF_CC_info.jpg');
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  margin-bottom: 10px;
-  height: 40rem;
-  width: 100%;
-  background-size: cover;
-}
-
-#wireframe_dash {
-  background-image: url('images/WF Dashboard.png');
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  margin-bottom: 10px;
-  height: 40rem;
-  width: 100%;
-  background-size: cover;
-}
-
-#wireframe_settings {
-  background-image: url('images/WF Settings.png');
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  margin-bottom: 10px;
-  height: 40rem;
-  width: 100%;
-  background-size: cover;
-}
-
-#wireframe_landing {
-  background-image: url('images/WF Landing Page revised.png');
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  margin-bottom: 10px;
-  height: 40rem;
-  width: 100%;
-  background-size: cover;
-}
-
-#highfi_dashboard {
-  background-image: url('images/HF_Dashboard.png');
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  margin-bottom: 10px;
-  height: 40rem;
-  width: 100%;
-  background-size: cover;
-}
-
-#highfi_sharing {
-  background-image: url('images/HF_Document_Sharing_settings.png');
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  margin-bottom: 10px;
-  height: 40rem;
-  width: 100%;
-  background-size: cover;
-}
-
-#highfi_doc_display {
-  background-image: url('images/HF_Document_Display.png');
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  margin-bottom: 10px;
-  height: 40rem;
-  width: 100%;
-  background-size: cover;
-}
-
-#highfi_signup {
-  background-image: url('images/HF_Sign_In_Up.png');
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  margin-bottom: 10px;
-  height: 40rem;
-  width: 100%;
-  background-size: cover;
-}
-
 
 img {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2.4rem;
   margin-bottom: 2.4rem;
   object-fit: cover;
-  height: 25%;
+  height: auto;
+  width: 100%;
+}
+img.branding_img {
   width: 40%;
 }
 
+img.me {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 img.file {
   height: 22.5rem;
   width: 80%;
+  border: 2px #180333;
 }
 
 img.solution_img {
@@ -410,9 +332,12 @@ img.solution_img {
 img.user_research_img {
   width: 80%;
 }
+
+
+
 /***responsive***/
 
-@media screen and (min-width: 575px){
+@media only screen and (min-width: 700px){
   /*** typography ***/
   h1 {
     font-size: 5.6rem;
@@ -431,29 +356,31 @@ img.user_research_img {
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   p.resume_header {
     font-size: 1.6rem;
   }
-
-.responsive_hf .responsive_wf .responsive_personas {
-  flex-direction: row;
-}
-
+  .nav_element {
+    font-size: 1.2rem;
+  }
   img.nav_logo {
     width: 3.2rem;
     height: auto;
   }
 
-}
-
-@media screen and (min-width: 991px){
-
-  #wireframe_cc #wireframe_settings #wireframe_dash #wireframe_landing #highfi_signup #highfi_sharing #highfi_dashboard #highfi_doc_display {
-    width: 25%;
-    height: auto;
-
+  .img_gal_flex {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    flex-direction: row;
+  }
+  .flexi {
+    width: calc(50% - 1.6rem);
+    margin: .8rem
+  }
+  .project_title {
+    padding-top: 16rem;
   }
 }
