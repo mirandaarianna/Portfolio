@@ -356,7 +356,9 @@ img.user_research_img {
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   p.resume_header {
@@ -365,8 +367,14 @@ img.user_research_img {
   .nav_element {
     font-size: 1.2rem;
   }
+
+  .branding_img {
+    width: calc(25% - 1.6rem);
+    margin: .8rem;
+  }
+
   img.nav_logo {
-    width: 3.2rem;
+    width: 4rem;
     height: auto;
   }
 
@@ -378,7 +386,7 @@ img.user_research_img {
   }
   .flexi {
     width: calc(50% - 1.6rem);
-    margin: .8rem
+    margin: .8rem;
   }
   .project_title {
     padding-top: 16rem;
