@@ -17,7 +17,11 @@ a {
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
-  color: #180333;
+}
+
+a.nav_link {
+  color: #F1E6FF;
+  padding: 1.6rem;
 }
 
 h1 {
@@ -51,10 +55,6 @@ h4 {
   color: #180333;
 }
 
-.nav_element {
-  font-size: .8rem;
-  padding-bottom: .8rem;
-}
 p{
   font-family: 'Muli', sans-serif;
   font-size: 1.2rem;
@@ -168,19 +168,9 @@ header {
 
 
 li {
-  color: #F2F2F2;
+  color: #F1E6FF;
 }
 
-li .nav_element{
-  display: block;
-  color: #F2F2F2;
-  text-align: center;
-  padding-top: 1.6rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
-  text-decoration: none;
-  float: right;
-}
 li .footer_icon{
   display: block;
   float: left;
@@ -200,31 +190,58 @@ li .footer_element{
 .name {
   padding-top: 24rem;
 }
+
+/*** top nav bar ***/
+.active {
+  display: block;
+}
+
+.nav_bar {
+  background-color: #180333;
+  width: 100%;
+}
+
+.nav_link {
+  margin-bottom: .8rem;
+}
+
 .nav_logo {
-margin-top: .4rem;
-margin-left: .8rem;
-margin-bottom: 0;
-margin-right: 0;
-}
-img.nav_logo {
-  width: 2.4rem;
-  height: auto;
-}
-li .nav_logo {
-  float: left;
-
+  width: 10%;
+  margin: 0;
+  padding-left: 1.6rem;
+  padding-top: .8rem;
 }
 
+.nav_menu li {
+  text-align: center;
+  padding: .8rem;
+}
+
+.nav_menu {
+  list-style-type: none;
+  display: none;
+}
+.navbar_toggle {
+  position: absolute;
+  top: .8rem;
+  right: 2.4rem;
+  cursor: pointer;
+  color: #F1E6FF;
+  font-size: 1.6rem;
+}
 #personas_janessa {
   padding-right: 1.6rem;
 }
+
 .project_summary {
   padding-top: 2.4rem;
   padding-bottom: 2.4rem;
 }
+
 .project_title {
   padding-top: 4rem;
 }
+
 section {
   padding-top: 3.2rem;
 }
@@ -250,15 +267,7 @@ section {
   padding-bottom: 3.2rem;
 }
 
-ul.nav_bar {
-  width: 100%;
-  position: fixed;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #180333;
-}
+
 
 ul.footer {
   width: 100%;
@@ -364,7 +373,7 @@ img.user_research_img {
   p.resume_header {
     font-size: 1.6rem;
   }
-  .nav_element {
+  .nav_link {
     font-size: 1.2rem;
   }
 
@@ -373,10 +382,8 @@ img.user_research_img {
     margin: .8rem;
   }
 
-  img.nav_logo {
-    width: 4rem;
-    height: auto;
-  }
+/*** images ***/
+
 
   .img_gal_flex {
     display: flex;
@@ -392,3 +399,30 @@ img.user_research_img {
     padding-top: 16rem;
   }
 }
+
+/*** nav bar ***/
+.navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .nav-links {
+        margin-left: 40px;
+    }
+    .logo {
+        margin-top: 0;
+    }
+   .navbar-toggle {
+       display: none;
+    }
