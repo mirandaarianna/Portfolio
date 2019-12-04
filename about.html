@@ -10,29 +10,33 @@
     <title>Portfolio | Miranda Helck</title>
   </head>
   <body>
-    <nav>
-      <ul class="nav_bar">
-      <!---Nav bar--->
-        <li class="nav_bar"><img src="styles/images/logo_no_name.png" alt="logo" class="nav_logo"></li>
-        <li class="nav_bar"><a href="index.html#work" class="nav_element">Work</a></li>
-        <li class="nav_bar"><a href="about.html" class="nav_element">About</a></li>
-        <li class="nav_bar"><a href="index.html#contact" class="nav_element">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="nav_bar">
+        <span class="navbar_toggle" id="js_navbar-_toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <img src="styles/images/logo_no_name.png" alt="logo" class="nav_logo">
+        <ul class="nav_menu" id="js_menu">
+        <!---Nav bar--->
+          <li><a href="index.html#work" class="nav_link">Work</a></li>
+          <li><a href="about.html" class="nav_link">About</a></li>
+          <li><a href="index.html#contact" class="nav_link">Contact</a></li>
+        </ul>
+      </nav>
       <div class="container">
           <article class="hero">
             <h1 class="about_title">About Me</h1>
-            <h2 class="about_intro">I am a designer, writer, and pop culture enthusiast based out of Philadelphia. I design helpful and striking digital products that promote positive change.</h2>
+            <h2 class="about_intro">I am a designer, writer, and pop culture enthusiast based out of Brooklyn. I design helpful and striking digital products that promote positive change.</h2>
           </article>
         <main>
           <!--- biography --->
           <article class="about_me">
             <section class="biography">
             <img src="styles/images/Me_lol.jpeg" alt="Me after a cocktail competition" class="me">
-            <p class="bio_text">I believe that great design isn’t a luxury- it’s a necessity. Great design is an effective, affordable, and easily utilized tool that can improve lives.</p>
-            <p class="bio_text">With a Bachelor’s degree in Classics and a past career in high-end hospitality, my non-traditional experience has given me a unique perspective on user experience design. I have crafted incredible hospitality experiences- from themed pop-up bars to full restaurant beverage programs. I designed spaces and programs to fulfill both the needs of my owners and investors and the needs of our guests.</p>
-            <p class="bio_text">I knew that there was always room for growth and being able to directly interact with my customers and observe them interacting with my products has been an essential aspect in leading a successful program. I learned so much from those guest interactions and it extended beyond the conversation. I was able to empathize with the guests and appreciate their point of view, engendering a feeling of trust. It was fulfilling to offer an enjoyable experience to those that I served, in all capacities, ranging from the guest to my fellow members of my service team.</p>
-            <p class="bio_text">I want to solve problems in medical, civic, and political realms.  I want to use my experience and empathy to help my community, bring easy interactions and accessibility to projects that can help those in need.</p>
+            <p class="bio_text">I believe that great design isn’t a luxury- it’s a necessity. Great design is an effective, affordable, and easily utilized tool that can improve lives.
+              <br>With a Bachelor’s degree in Classics and a past career in high-end hospitality, my non-traditional experience has given me a unique perspective on user experience design. I have crafted incredible hospitality experiences- from themed pop-up bars to full restaurant beverage programs. I designed spaces and programs to fulfill both the needs of my owners and investors and the needs of our guests.
+              <br>I knew that there was always room for growth and being able to directly interact with my customers and observe them interacting with my products has been an essential aspect in leading a successful program. I learned so much from those guest interactions and it extended beyond the conversation. I was able to empathize with the guests and appreciate their point of view, engendering a feeling of trust. It was fulfilling to offer an enjoyable experience to those that I served, in all capacities, ranging from the guest to my fellow members of my service team.
+              <br>I want to solve problems in medical, civic, and political realms.  I want to use my experience and empathy to help my community, bring easy interactions and accessibility to projects that can help those in need.</p>
           </section>
           <section class="experience">
               <h3 class="exp_header">Experience</h3>
@@ -54,9 +58,9 @@
             <h3>Skills</h3>
                 <p class="resume_header">Research</p>
                 <p class="skills_list">Survey writing, persona creating, story writing, card sorting, brainstorming, wireframing</p><br>
-                <p class="resume_header">Visual</p>
+                <br><p class="resume_header">Visual</p>
                 <p class="skills_list">Figma, Sketch, Invision, Adobe XD, Photoshop, Illustrator, Pen and paper</p><br>
-                <p class="resume_header">Frontend</p>
+                <br><p class="resume_header">Frontend</p>
                 <p class="skills_list">HTML5, CSS3, Javascript, Github, Git, Chrome Dev Tools</p>
           </section>
         </article>
