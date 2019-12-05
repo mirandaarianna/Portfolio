@@ -1,10 +1,17 @@
-function onReady() {
+let mainNav=document.getElementById('nav_menu');
+let navbarToggle=document.getElementById('navbar_toggle');
 
-let mainNav = document.getElementById('js_menu');
-let navBarToggle = document.getElementById('js_navbar_toggle');
 
-navBarToggle.addEventListener('click', function () {
 
-    mainNav.classList.toggle('active');
+navbarToggle.addEventListener('click',function(){
+
+    if(this.classList.contains('active')){
+        mainNav.style.display="none";
+        this.classList.remove('active');
+    }
+    else{
+        mainNav.style.display="flex";
+        this.classList.add('active');
+
+    }
 });
-}
