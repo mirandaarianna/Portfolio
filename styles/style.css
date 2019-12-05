@@ -74,6 +74,7 @@ p.resume_date {
   color: #180333;
 }
 
+
 /*** structure ***/
 .about_title {
   padding-top: 6.4rem;
@@ -361,6 +362,7 @@ img.user_research_img {
   }
   h1 {
     font-size: 5.6rem;
+    padding-top: 5.6rem;
   }
 
   h2 {
