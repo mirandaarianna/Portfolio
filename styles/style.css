@@ -165,11 +165,14 @@ header {
 }
 
 .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background: linear-gradient(180deg, #180333 0%, rgba(30, 4, 64, 0.95) 45.83%, #180333 100%);
     margin: auto;
     width: 100%;
     padding-bottom: 2.4rem;
-    height: 100vh;
+    height: auto;
   }
 
 
@@ -179,7 +182,7 @@ li {
 
 
 .name {
-
+  padding-top: 3.2rem;
 }
 .main {
   max-width: 160rem;
@@ -250,7 +253,10 @@ section {
 }
 
 .summary {
-  padding: 6.4rem 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3.2rem;
+
 }
 
 .resume_date {
@@ -363,7 +369,6 @@ img.user_research_img {
   }
   h1 {
     font-size: 5.6rem;
-    padding-top: 5.6rem;
   }
 
   h2 {
@@ -388,13 +393,20 @@ img.user_research_img {
   .nav_link {
     font-size: 1.2rem;
   }
-
-  .branding_img {
-    width: calc(25% - 1.6rem);
-    margin: .8rem;
-  }
+/*** hero ***/
+.name .about_title .project_title {
+  padding-top: 7.2rem;
+}
+.about_intro .summary {
+  padding-bottom: 3.2rem;
+}
 
 /*** images ***/
+.branding_img {
+  width: calc(25% - 1.6rem);
+  margin: .8rem;
+}
+
   .persona {
   width: calc(50% - 1.6rem);
   margin: .8rem;
