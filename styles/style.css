@@ -394,7 +394,10 @@ img.user_research_img {
     font-size: 1.2rem;
   }
 /*** hero ***/
-.name .about_title .project_title {
+.name {
+  padding-top: 8rem;
+}
+.about_title .project_title {
   padding-top: 7.2rem;
 }
 .about_intro .summary {
