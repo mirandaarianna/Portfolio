@@ -14,7 +14,7 @@ html {
 /*** typogaphy ***/
 a {
   font-family: 'Muli', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
   color: #180333;
@@ -58,7 +58,7 @@ h4 {
 
 p{
   font-family: 'Muli', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #180333;
 }
 p.resume_header {
@@ -76,6 +76,7 @@ p.resume_date {
 
 
 /*** structure ***/
+
 .about_title {
   padding-top: 6.4rem;
   padding-bottom: 2.4rem;
@@ -113,6 +114,21 @@ article {
   padding: 4rem auto;
 }
 
+.button {
+  background-color: #180333;
+  border: none;
+  color: #f2f2f2;
+  padding: .8rem 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-top: .4rem;
+  margin-left: 10%;
+  margin-right: auto;
+  cursor: pointer;
+  width: 11.2rem;
+}
 
 .conclusion {
   margin-bottom: 5.6rem;
@@ -124,13 +140,16 @@ article {
   margin: 0 auto;
   width: 100%;
 }
+
 #contact {
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   padding-bottom: 4rem;
 }
 .contact_links {
-  padding-top: 1.6rem;
+  margin-left: 10%;
+  margin-right: auto;
+
 }
 
 div.desc {
@@ -168,7 +187,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: linear-gradient(180deg, #180333 0%, rgba(30, 4, 64, 0.95) 45.83%, #180333 100%);
+    background-color: #180333; /*linear-gradient(180deg, #180333 0%, rgba(30, 4, 64, 0.95) 45.83%, #180333 100%);*/
     margin: auto;
     width: 100%;
     padding-bottom: 2.4rem;
@@ -184,8 +203,8 @@ li {
 .name {
   padding-top: 3.2rem;
 }
-.main {
-  max-width: 160rem;
+article section {
+  max-width: 120rem;
 }
 /*** top nav bar ***/
 .active {
@@ -294,7 +313,9 @@ ul.footer {
 }
 i {
   color: #F2F2F2;
-  padding-right: 1.6rem;
+  padding-top: .8rem;
+  padding-right: 1.8rem;
+  font-size: 2.4rem;
 
 }
 
@@ -347,7 +368,7 @@ img.branding_img {
 
 
 img.file {
-  width: 25%;
+  width: 15%;
 }
 
 img.solution_img {
