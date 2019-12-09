@@ -107,7 +107,6 @@ article {
 .me {
   width: 25%;
   height: 20rem;
-  
 }
 
 .branding_img {
@@ -195,7 +194,9 @@ header {
     height: auto;
   }
 
-
+.featured_project {
+  padding-top: .8rem;
+}
 li {
   color: #F1E6FF;
 }
@@ -206,6 +207,8 @@ li {
 }
 article section {
   max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*** top nav bar ***/
 .active {
@@ -369,7 +372,9 @@ img.branding_img {
 
 
 img.file {
-  width: 15%;
+  width: 20%;
+  margin-top: .8rem;
+  margin-bottom: .8rem;
 }
 
 img.solution_img {
