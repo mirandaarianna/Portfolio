@@ -120,7 +120,6 @@ article {
   padding: .4rem .2rem;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   display: inline-block;
   font-size: 1.4rem;
   margin-top: .4rem;
@@ -172,7 +171,7 @@ div.desc {
 
 .featured_project {
   width: 90%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 10px 10px 16px -5px rgba(158,158,158,1);
   display: flex;
   flex-direction: column;
   padding-bottom: 2.4rem;
@@ -199,7 +198,7 @@ header {
     margin: auto;
     width: 100%;
     padding-bottom: 2.4rem;
-    height: auto;
+    height: 100vh;
   }
 
 .featured_project {
@@ -226,17 +225,24 @@ article section {
 .nav_bar {
   background-color: #180333;
   width: 100%;
+  position: fixed;
 }
 
 .nav_link {
   margin-bottom: .8rem;
 }
+.nav_link:hover {
+  text-decoration: underline;
+}
+
+.nav_link:active {
+  text-decoration: underline;
+}
 
 .nav_logo {
   width: 4rem;
-  margin: 0;
-  padding-left: 1.6rem;
-  padding-top: .8rem;
+  margin-left: 1.6rem;
+  margin-top: .8rem;
 }
 
 #nav_menu li {
@@ -248,6 +254,8 @@ article section {
   list-style-type: none;
   display: none;
   flex-direction: column;
+  padding-bottom: .8rem;
+  background-color: #180333;
 }
 #navbar_toggle {
   position: absolute;
@@ -257,9 +265,7 @@ article section {
   color: #F1E6FF;
   font-size: 2.4rem;
 }
-#personas_janessa {
-  padding-right: 1.6rem;
-}
+
 
 .project_summary {
   padding-bottom: 2.4rem;
@@ -444,6 +450,9 @@ img.user_research_img {
     font-size: 1.2rem;
   }
 /*** hero ***/
+.hero {
+  height: auto;
+}
 .name {
   padding-top: 8rem;
 }
