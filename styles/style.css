@@ -453,12 +453,15 @@ img.user_research_img {
 .hero {
   height: auto;
 }
+
 .name {
   padding-top: 8rem;
 }
+
 .about_title .project_title {
   padding-top: 7.2rem;
 }
+
 .about_intro .summary {
   padding-bottom: 3.2rem;
 }
@@ -521,7 +524,7 @@ img.user_research_img {
     }
     .nav_logo {
         width: 5.6rem;
-        margin-top: 0;
+        margin-top: .8rem;
     }
    #navbar_toggle {
        display: none;
