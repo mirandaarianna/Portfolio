@@ -28,23 +28,21 @@ a.nav_link {
 h1 {
   color: #F1E6FF;
   font-weight: bold;
-  font-family: 'Playfair Display', serif;
+  font-family: 'playfair display', serif;
   font-size: 3.2rem;
   text-align: center;
 }
 h2 {
   color: #F1E6FF;
-  font-family: 'Playfair Display', serif;
+  font-family: 'playfair display', serif;
   font-size: 2.4rem;
   text-align: left;
   line-height: 1.5;
 }
 h3 {
-  font-family: 'Muli', sans-serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
+  font-family: 'playfair display', sans-serif;
+  font-size: 2rem;
+  text-align: left;
   color: #180333;
 }
 h4 {
@@ -52,7 +50,7 @@ h4 {
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   color: #180333;
 }
 
@@ -69,8 +67,11 @@ p.resume_date {
   font-weight: 200;
   text-transform: uppercase;
 }
-
+.slogan {
+  margin-left: 10%;
+}
 .slogan_b {
+
   color: #180333;
 }
 
@@ -91,8 +92,6 @@ p.resume_date {
 }
 article {
   padding-top: 4rem;
-  padding-left: 2.4rem;
-  padding-right: 2.4rem;
 }
 .biography {
   display: flex;
@@ -115,12 +114,13 @@ article {
 }
 
 .button {
-  background-color: #180333;
-  border: none;
-  color: #f2f2f2;
-  padding: .8rem 1.6rem;
+  background-color: #f2f2f2;
+  border: .2rem solid #180333;
+  color: #180333;
+  padding: .4rem .2rem;
   text-align: center;
   text-decoration: none;
+  text-transform: capitalize;
   display: inline-block;
   font-size: 1.4rem;
   margin-top: .4rem;
@@ -142,10 +142,15 @@ article {
 }
 
 #contact {
-  font-family: 'Playfair Display', serif;
+  font-family: 'playfair display', serif;
   font-size: 1.6rem;
   padding-bottom: 4rem;
 }
+
+.contact_text {
+  padding-bottom: 1.6rem;
+}
+
 .contact_links {
   margin-left: 10%;
   margin-right: auto;
@@ -166,8 +171,11 @@ div.desc {
 }
 
 .featured_project {
+  /**width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); **/
   display: flex;
   flex-direction: column;
+  padding-bottom: 2.4rem;
 }
 h4 {
   padding-top: 2.4rem;
@@ -254,7 +262,6 @@ article section {
 }
 
 .project_summary {
-  padding-top: 2.4rem;
   padding-bottom: 2.4rem;
 }
 p {
@@ -268,8 +275,13 @@ p {
 
 section {
   padding-top: 3.2rem;
+  margin-left: 10%;
 }
 
+.section_title {
+  margin-left: 10%;
+  background-color:
+}
 .slogan_a {
   text-align: center;
   padding: 6.4rem;
@@ -281,7 +293,10 @@ section {
   padding-top: 3.2rem;
 
 }
-
+.title {
+  margin-left: 10%;
+  padding-bottom: .8rem;
+}
 .resume_date {
   padding-bottom: .8rem;
 }
@@ -294,27 +309,35 @@ section {
   padding-bottom: 3.2rem;
 }
 
+.subtitle {
+  padding-top: 0;
+  padding-bottom: 1.6rem;
+  text-transform: none;
+  font-style: italic;
+  margin-left: 10%;
+}
 
-
-ul.footer {
+.footer {
   display: flex;
-  align-items: baseline;
+  justify-content: center;
   width: 100%;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-bottom: .8rem;
   overflow: hidden;
   background-color: #180333;
 }
 .footer_element {
   font-size: 1.2rem;
-  color: #F2F2F2;
+  color: #f2f2f2;
   text-decoration: none;
   flex-basis: 2.4rem;
 }
+/**
 .footer_text {
   flex: 1;
-}
+} **/
+
 i {
   color: #F2F2F2;
   padding-top: .8rem;
