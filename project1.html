@@ -28,12 +28,17 @@
             <!--- Full screen project introduction --->
             <h4 class="case_study">Case Study</h4>
             <h1 class="project_title">File</h1>
-            <img src="styles/images/Laptop_Img.png" alt="Screen from final" class="solution_img">
+            <figure class="half left zoom-effect">
+                <div class="aspectRatioPlaceholder" >
+                  <div class="aspect-ratio-fill" style="padding-bottom: 50%;"></div>
+                  <img src="styles/images/Laptop_Img.png" data-width="900" data-height="450" alt="Screen from final" class="solution_img">
+                </div>
+            </figure>
             <h2 class="summary">File changes how users interact with their cloud application and turns content organization into an easily utilized tool.</h2>
-            <button><a href="https://invis.io/8GU1BCE5JY6" class=button>View Invision Prototype</a></button>
+            <a href="https://invis.io/8GU1BCE5JY6"><button class=button>View Invision Prototype</button></a>
           </article>
           <article>
-            <div class="project_breakdown">
+            <div id="project_breakdown">
               <div class="pbd design_roles">
                 <i class="det_icon fas fa-search"></i>
                 <h4 class="breakdown_title">Design Roles</h4>
@@ -73,7 +78,7 @@
                       <li><p>InVision</p></li>
                     </ul>
                 </div>
-
+              </div>
           </article>
             <article class="problem">
               <!--- problem, solution, process, and conclusion --->
@@ -91,7 +96,7 @@
                 <section id="survey_section">
                 <h4>Survey</h4>
                 <p>I began my research on this project by conducting a survey. My survey reached over 40 users<p>
-                  <p class="goals">Main Goals</p>
+                  <h4 class="goals">Survey Goals</h4>
                     <div class="survey_flex">
                      <div class="survey survey_comp"><p class="goal_title">Identify Competitors</p>
                        <ul>
@@ -123,9 +128,15 @@
                          <li class="result"><p>67% of users store slideshows</p></li>
                      </ul></div>
                    </div>
+                  <a href="project1.html#project_breakdown" class="backtotop"><p>Back to top</p></a>
               </section>
                 <section id="comp_analysis">
                   <h4>Competitve Analysis</h4>
+                  <div class="img_gal_flex">
+                    <div class="comp_flex"><img src="styles/images/Dropboxlogo.png" alt="DropBox"></div>
+                  <div class="comp_flex"><img src="styles/images/GoogleDrive.png" alt="Google Drive"></div>
+                  <div class="comp_flex"><img src="styles/images/boxlogo.jpg" alt="Box"></div>
+                </div>
                   <p>I opted to research Google Drive, Dropbox, and Box. There was a fair amount of consistency throughout their product features. It was clear that to compete, a new service would have to offer something that set itself apart.</p>
                   <p>Read a more in-depth analysis <a href="https://drive.google.com/open?id=1WlHmIGxGVr7P-blwS9qKLj2pMQLBZmky">here</a>.</p>
                   <div class="swot_analysis">
@@ -157,15 +168,16 @@
                         <li class="swot_title"><p>Threats</p></li>
                         <li><p>Oversaturation of market</p></li>
                         <li><p>Expansive hosting capabilities</p></li>
+                      </ul>
                     </div>
                   </div>
+                  <a href="project1.html#project_breakdown" class="backtotop"><p>Back to top</p></a>
                 </section>
                 <section id="personas">
                   <h4>User Personas</h4>
                   <p>In an effort to flesh out a more detailed target audience, I interviewed 4 of the individuals I had surveyed. I asked more in-depth questions and actually prompted them to explore their main cloud storage services to see if there was “digital dead weight”. From these answers, I crafted a few user personas. My user personas were individuals from various backgrounds but who all struggled with keeping their documents organized.</p>
                    <div class="responsive_personas">
                     <div class="persona personas1">
-                      <a target="_blank" href="styles/images/Janessa Persona.png">
                         <img src="styles/images/Janessa.jpg" alt="Persona" class="persona_img"></a>
                       <div class="persona_info">
                         <p class="persona_det">Janessa L.</p>
@@ -198,10 +210,11 @@
                       </div>
                     </div>
                   </div>
+                  <a href="project1.html#project_breakdown" class="backtotop"><p>Back to top</p></a>
                 </section>
                 <section id="user_stories">
                   <h4>User Stories</h4>
-                  <p>After completing the personas, I was able to identify File’s MVP and create user stories and flows to set the groundwork for the visual design.</p>
+                  <p>After completing the personas, I was able to identify File’s MVP and create user stories.</p>
                   <table class="stories">
                       <tr>
                         <th><p class="caption">As a new user</p></th>
@@ -219,15 +232,18 @@
                         <th><p class="caption">Low Priority</p></th>
                       </tr>
                     </table>
-                <p>Click to view my <a href="https://docs.google.com/spreadsheets/d/1UJTHBuGGZYuwoenj3arMb6Ge42_kqz1XaFV_f4Q2CwA/edit?usp=sharing">User Stories</a></p>
+                <p>View my user stories <a href="https://docs.google.com/spreadsheets/d/1UJTHBuGGZYuwoenj3arMb6Ge42_kqz1XaFV_f4Q2CwA/edit?usp=sharing">here.</a></p>
+                <a href="project1.html#project_breakdown" class="backtotop"><p>Back to top</p></a>
               </section>
               <section id="user_flow">
                   <h4>User Flows</h4>
-                  <img src="styles/images/DeleteObsoleteFiles.png" alt="Delete Obsolete Files" class="user_flows">
+                  <p>Using my user stories, I created user flows to determine how my product would be structured</p>
+                        <img src="styles/images/DeleteObsoleteFiles.png" alt="Delete Obsolete Files" class="user_flows">
                   <p class="caption">Delete Obsolete Files User Flow</p>
-                  <img src="styles/images/Sharedocumentuserflows.png" alt="Share Document" class="user_flows">
+                        <img src="styles/images/Sharedocumentuserflows.png" alt="Share Document" class="user_flows">
                   <p class="caption">Share Document User Flow</p>
-                  <p>Click to view all my <a href="https://drive.google.com/open?id=120w5vlCslZYtvvS6dxz-rwn5w9b__qvx">User Flows</a></p>
+                  <p>View my user flows<a href="https://drive.google.com/open?id=120w5vlCslZYtvvS6dxz-rwn5w9b__qvx">here</a></p>
+                  <a href="project1.html#project_breakdown" class="backtotop"><p>Back to top</p></a>
                 </section>
               </section>
               <article id="visual_design">
@@ -237,44 +253,42 @@
                   <p>Following my research I first sketched out the necessary screens and then developed lo-fidelity wireframes.</p>
                   <div class="img_gal_flex">
                     <div class="flexi flexi1">
-                      <a target="_blank" href="styles/images/WF Dashboard.png">
-                        <img src="styles/images/Dashboardsktch.png" alt="Dashboard Sketch" class="lofi_img">
-                        <p class="caption">Dashboard</p></a>
+                            <img src="styles/images/Dashboardsktch.png" alt="Dashboard Sketch" class="lofi_img">
+                        <p class="caption">Dashboard Sketch</p></a>
                     </div>
                       <div class="flexi flexi1">
-                        <a target="_blank" href="styles/images/WF Dashboard.png">
-                          <img src="styles/images/IMG_2924 2sktch.png" alt="CC Info Sketch" class="lofi_img">
-                          <p class="caption">Dashboard Sketch</p></a>
+                              <img src="styles/images/IMG_2924 2sktch.png" alt="CC Info Sketch" class="lofi_img">
+                          <p class="caption">Payment Screen Sketch</p></a>
                       </div>
                     </div>
                     <div class="img_gal_flex">
-                    <div class="flexi flexi1">
-                      <a target="_blank" href="styles/images/WF Dashboard.png">
-                        <img src="styles/images/WF Dashboard.png" alt="Dashboard Wireframe" class="lofi_img">
+                      <div class="flexi flexi1">
+                            <img src="styles/images/WF Dashboard.png" alt="Dashboard Wireframe" class="lofi_img">
                         <p class="caption">Credit Card Info Sketch</p></a>
                     </div>
                     <div class="flexi flexi2">
-                      <a target="_blank" href="styles/images/WF Settings.png">
-                        <img src="styles/images/WF Settings.png" alt="Settings" class="lofi_img">
+                            <img src="styles/images/WF Settings.png" alt="Settings" class="lofi_img">
                       <p class="caption">Settings</p></a>
                     </div>
                   </div>
-                  <p>View my wirefreame InVision prototype <a href="https://invis.io/5GT6ELE39PX">here</a>
+                  <p>View my wirefreame <a href="https://invis.io/5GT6ELE39PX">here</a>
+                  <a href="project1.html#project_breakdown" class="backtotop"><p>Back to top</p></a>
                 </section>
                 <section id="branding">
                   <h4>Branding</h4>
                   <p>My first step was to establish a name for my product. I wanted something that was catchy and could be used as a noun and as a verb. Since “File” is ubiquitous when discussing cloud storage, I felt like it was a great fit for the product.</p>
                   <div class="img_gal_flex">
-                    <img src="styles/images/logo sketch1.jpg" alt="Logo Sketches" class="flexi branding_img logo">
-                    <img src="styles/images/Logo Large-Color.png" alt="Logo Iteration" class="flexi branding_img logo">
+                    <img src="styles/images/logo sketch1.jpg" alt="Logo Sketches" class="branding_img logo1">
+                    <img src="styles/images/Logo Large-Color.png" alt="Logo Iteration" class="branding_img logo2">
                   </div>
                   <p>Using the name “File” as a jumping-off point, I began to develop my logo. I sketched 40 different iterations and performed several rounds of preference testing.</p>
                   <div class="img_gal_flex">
-                    <img src="styles/images/Colors.png" alt="Color Scheme" class="flexi branding_img">
-                    <img src="styles/images/Typography.png" alt="Typography" class="flexi branding_img">
+                    <img src="styles/images/Colors.png" alt="Color Scheme" class="branding_img">
+                    <img src="styles/images/Typography.png" alt="Typography" class="branding_img">
                  </div>
                   <p>File’s brand is trustworthy, professional, modern, and youthful. To visually articulate the brand story I used dark blues contrasted with brighter peach hues and compatible typography.</p>
                   <p>View my full style guide <a href="https://drive.google.com/open?id=1XUHX2QXUn4c0mziFxUTLl8FFZW7zpGRm">here</a>.</p>
+                  <a href="project1.html#project_breakdown" class="backtotop"><p>Back to top</p></a>
                   </section>
                   <section id="mockups">
                     <h4>High Fidelity Mockups</h4>
@@ -282,38 +296,51 @@
                       These two phases went through a number of revisions and iterations which provided me with the insight to create a comprehensive product.</p>
                     <div class="img_gal_flex">
                       <div class="flexi flexi3">
-                        <a target="_blank" href="styles/images/HF_Dashboard.png">
-                        <img src="styles/images/Dashboard.png" alt="Dashboard" class="hifi_img">
+                            <img src="styles/images/Dashboard.png" alt="Dashboard" class="hifi_img">
                           <p class="caption">Dashboard</p></a>
                       </div>
                       <div class="flexi flexi4">
-                          <a target="_blank" href="styles/images/HF_Document_Sharing_settings.png">
                           <img src="styles/images/Settings.png" alt="Settings" class="hifi_img">
                           <p class="caption">Settings</p></a>
                         </div>
                       </div>
-                      <p>View the prototype <a href="https://invis.io/8GU1BCE5JY6">here</a>.</p>
+                      <p>View my high-fidelity prototype <a href="https://invis.io/8GU1BCE5JY6">here</a>.</p>
+                      <a href="project1.html#project_breakdown" class="backtotop"><p>Back to top</p></a>
                     </section>
                     <section id="user_testing">
                       <h4>User Testing</h4>
                       <p>I conducted two rounds of user testing. One with my wireframes to reveal structural flaws and the second with using my high fidelity mockups. I asked my users to complete the tasks outlined in my user stories and was able to develop a better product based on their feedback.</p>
-                      <div class="testing settings_testing">
-                        <img src="styles/images/SettingsA.png" class="settings_img">
-                        <img src="styles/images/SettingsB.png" class="settings_img">
-                        <p class="caption">Settings Screen</p>
+                      <div class="tasks">
+                        <h4>User Testing Tasks</h4>
+                        <ul class="task_list">
+                          <li class="task"><p>Signing Up</p></li>
+                          <li class="task"><p>Logging In</p></li>
+                          <li class="task"><p>Create a new document</p></li>
+                          <li class="task"><p>Share a document</p></li>
+                          <li class="task"><p>View storage breakdown</p></li>
+                          <li class="task"><p>Delete obsolete files</p></li>
+                        </ul>
                       </div>
+                      <div class="testing settings_testing">
+                            <img src="styles/images/SettingsA.png" data-width="400" data-height="246" class="settings_img" alt="Settings">
+                            <img src="styles/images/SettingsB.png" data-width="400" data-height="233" class="settings_img"alt="Settings">
+                      </div>
+                      <p class="caption">Settings Screen</p>
                       <div class="testing share_settings">
-                      <img src="styles/images/Share_SettingsA.png" class="share_img">
-                      <img src="styles/images/Share_SettingsB.png" class="share_img">
-                      <p class="caption">Sharing Settings Screen</p>
-                    </div>
+                            <img src="styles/images/Share_SettingsA.png" data-width="400" data-height="447" class="share_img" alt="Sharing Settings">
+                          <img src="styles/images/Share_SettingsB.png" data-width="400" data-height="460" class="share_img" alt="Sharing Settings">
+                        </div>
+                    <p class="caption">Sharing Settings Screen</p>
+                    <a href="project1.html#project_breakdown" class="backtotop"><p>Back to top</p></a>
                     </section>
                   </article>
+                </article>
                   <article class="conclusion">
                     <h3>Conclusion</h3>
                     <p class="conclusion_text">In creating File, I was able to gain a much greater understanding of the design process. I learned a tremendous amount through the revision process. At times it was a bit painful, but I saw the merit and necessity of revision and was able to further develop my eye for design. I got to see the design cycle in action, I often went back to my user research to answer my own questions concerning my designs.
                       The importance of user testing and the MVP were made evident throughout this process, I found that revisiting goals through user testing was a great way to develop and articulate standards.
                       Throughout this process, I was able to flesh out my own personal process. It taught me how to receive and implement feedback and criticism properly and how to successfully create a digital product.</p>
+                      <a href="project1.html#project_breakdown" class="backtotop"><p>Back to top</p></a>
                     </article>
               <footer>
                 <ul class="footer">

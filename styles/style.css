@@ -108,8 +108,8 @@ article section {
   max-width: 120rem;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
 }
 
  .button {
@@ -156,6 +156,7 @@ article section {
   height: auto;
   margin: 0 auto;
   width: 100%;
+  max-width: 120rem;
 }
 
 .contact_text,.contact_title {
@@ -212,12 +213,11 @@ li {
 }
 
 .testing {
-  margin-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  border: .1rem solid #180333;
-  border-radius: 5px;
 }
 
 .conclusion {
@@ -342,7 +342,7 @@ p {
 }
 
 .slogan_b {
-  color: #F1E6FF;
+  color: #F2f2f2;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -379,7 +379,9 @@ h3.solution{
   color: #f1e6ff;
 }
 
-
+.goals {
+  margin-bottom: 1.6rem;
+}
 .details {
   border-bottom: ;
 }
@@ -389,6 +391,9 @@ h3.solution{
   color: #F1E6FF;
 }
 
+.backtotop {
+
+}
 .det_icon {
   color: #180333;
   font-size: 2.8rem;
@@ -408,7 +413,7 @@ img.logo {
   font-weight: 700;
   font-size: 1.8rem;
 }
-.project_breakdown {
+#project_breakdown {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
@@ -426,6 +431,7 @@ img.logo {
 }
 
 .problem {
+  padding-top: 1.6rem;
   background-color: #f0eff2;
 }
 .problem_title {
@@ -444,6 +450,11 @@ img.logo {
 .title {
   margin-left: 10%;
   margin-bottom: .8rem;
+}
+
+.comp_flex {
+  width: 3.2rem;
+  height: auto;
 }
 
 .swot_title {
@@ -592,7 +603,6 @@ i {
 .img_gal_flex {
   display: flex;
   flex-wrap: wrap;
-
   flex-direction: column;
 }
 .flexi {
@@ -627,6 +637,11 @@ i {
   font-weight: 700;
 }
 
+.tasks {
+  width: 80%;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
 
 .persona_quote {
   font-style: italic;
@@ -662,6 +677,7 @@ i {
   width: 16rem;
   height: 16rem;
   object-fit: cover;
+  margin-left: 30%;
 }
 
 .process_title {
@@ -690,7 +706,6 @@ table {
 
 
 img {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2.4rem;
@@ -716,47 +731,105 @@ img.user_research_img {
 }
 
 
+/***Medium Lightbox Styles***/
+.aspectRatioPlaceholder .img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.zoom-effect .img{
+	cursor: pointer;
+	cursor: -webkit-zoom-in;
+	backface-visibility: hidden;
+}
+
+.zoom-effect .zoomImg,
+.zoom-effect .zoomImg-wrap {
+	position: relative;
+	z-index: 900;
+	transition: all 300ms;
+}
+
+.zoom-effect .zoomImg-wrap--absolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.zoom-effect .zoomImg {
+	cursor: pointer;
+	cursor: -webkit-zoom-out;
+}
+
+
+.zoom-effect .zoomOverlay.show{
+	opacity: 1;
+}
+
+.zoom-effect .zoomOverlay {
+	z-index: 800;
+	background: #fff;
+	position: absolute;
+	transition: opacity 300ms;
+	opacity: 0;
+	cursor: pointer;
+	cursor: -webkit-zoom-out;
+}
 
 /***responsive***/
 
 @media only screen and (min-width: 700px){
   /*** typography ***/
-  a {
-    font-size: 1.8rem;
+a {
+    font-size: 2rem;
   }
 
-  h1 {
+h1 {
     font-size: 5.6rem;
   }
 
-  h2 {
+h2 {
     font-size: 4rem;
     max-width: 72rem;
   }
 
-  h3 {
+h3 {
     font-size: 3.2rem;
   }
 
-  h4 {
+h4 {
     font-size: 2.4rem;
   }
 
-  p {
-    font-size: 1.8rem;
-    max-width: 63.2rem;
+p {
+    font-size: 2rem;
+    width: 50%;
   }
 
-  p.resume_header {
+p.resume_header {
     font-size: 1.6rem;
   }
 
-  .nav_link {
+.nav_link {
     font-size: 1.6rem;
   }
 
-  .bio_intro {
+.bio_intro {
     font-size: 2.4rem;
+  }
+
+.caption {
+    font-size: 1.6rem;
+  }
+
+  .button {
+    font-size: 2rem;
   }
 /*** index page specifications ***/
 .hero {
@@ -795,43 +868,73 @@ h2.slogan_a{
 
 .survey_flex {
   flex-flow: row wrap;
+  align-items: baseline;
 }
 
 .survey {
   width: 40%;
 }
+
 .swot_analysis {
   flex-flow: row wrap;
+  align-items: baseline;
 }
 .swot {
   width: 40%;
 }
+
 /*** "File" project page ***/
 .branding_img {
   width: calc(25% - 1.6rem);
+  margin: 0;
+  object-fit: contain;
 }
 
-.breakdown_title,.deliverables_list,.details_list {
-  margin-left: auto;
-  margin-right: auto;
+img.logo2 {
+  width: 17.2rem;
+  height: auto;
 }
 .persona {
   width: calc(50% - 1.6rem);
   margin: .8rem;
 }
 
+.problem,.solution,#contact,.conclusion {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+
 .persona_info {
-  width: 40%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.img_gal_flex {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.share_img,.settings_img {
+  width: calc(40% - 1.6rem);
+}
 
+.testing {
+  flex-direction: row;
+  padding: 1.6rem;
+}
+
+.img_gal_flex {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  .comp_flex {
+    width: 8rem;
+    height: auto;
+  }
+
+.deliverables_list_item {
+  margin-bottom: 1.6rem;
+}
   .flexi {
     width: calc(40% - 1.6rem);
     margin: .8rem;
@@ -850,14 +953,26 @@ h2.slogan_a{
       width: 40rem;
   }
 
+.pbd {
+  width: 20%;
+}
   .user_flows {
     width: 50rem;
     height: 24rem;
     object-fit: contain;
+    margin-left: 30%;
+  }
+
+  .tasks {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
   }
 /*** about me ***/
 .biography {
-  flex-direction: row;
+
 }
 
 
