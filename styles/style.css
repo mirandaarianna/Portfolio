@@ -117,7 +117,7 @@ article section {
 }
 
 .buttons1{
-  margin-left: 45%;
+  margin-left: 35%;
 }
  .button {
    border-top: 1px solid #271341;
@@ -793,6 +793,10 @@ p.resume_header {
     font-size: 2rem;
   }
 
+  .buttons1{
+    margin-left: 45%;
+  }
+  
 /*** index page specifications ***/
 .hero {
   height: auto;
