@@ -1,69 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Ovo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900|Playfair+Display:400,700,900&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio | Miranda Helck</title>
+    <script src="https://kit.fontawesome.com/adfcfcf1c7.js" crossorigin="anonymous"></script>
+    <script src="portfolio_script.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans|Ovo&display=swap" rel="stylesheet">
+    <title>Miranda Helck | Product Designer</title>
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <nav class="nav_bar">
-        <span id="navbar_toggle">
-            <i class="fas fa-bars"></i>
-        </span>
-        <a href="index.html"><img src="styles/images/logo-via-logohub (1).png" alt="logo" class="nav_logo"></a>
-        <ul id="nav_menu">
+        <div class="logo_and_hamburger">
+          <div class="nav_logo">
+            <a href="index.html"><h1 class="nav_logo_text">m.</h1></a>
+          </div>
+          <a href="javascript:void(0);" class="hamburger_menu" id="navbar_toggle" onclick="myFunction()">
+           <i class="fa fa-bars"></i>
+         </a>
+        </div>
+        <ul id="nav_menu" class="main-nav">
         <!---Nav bar--->
-          <li><a href="index.html#work" class="nav_link">Work</a></li>
-          <li><a href="about.html" class="nav_link">About</a></li>
-          <li><a href="index.html#contact" class="nav_link">Contact</a></li>
+          <li><a href="index.html#work" class="nav_link light_link">Work</a></li>
+          <li><a href="about.html" class="nav_link light_link">About</a></li>
+          <li><a href="mailto:miranda.helck@gmail.com" target="_blank" class="nav_link light_link">Contact Me</a></li>
         </ul>
       </nav>
-      <main>
-          <article class="hero">
-              <h1 class="hero_element name">Miranda Helck</h1>
-              <h2 class="hero_element slogan_a">Product Designer</h2>
-            <h2 class="hero_element slogan_b">Hi there! I am a designer crafting empathetic and accessible products that promote positive change.</h2>
-          </article>
-          <article id="work">
-            <!--- Selection of work --->
-            <h3 class="section_title">Latest Work</h3>
-            <section class="featured_project">
-                <img src="styles/images/Laptop_Image.png" alt="File Img" class="file">
-                <h4 class="title">File</h4>
-                <p class="subtitle">A cloud storage solution</p>
-                <p class="project_summary">File helps users efficiently organize their content and make the most of their storage space.</p>
-                <a href="project1.html" class="buttons"><button class="button">View Case Study</button></a>
-            </section>
-          </article>
-          <article id="contact">
-            <h3 class="contact_title">Contact</h3>
-            <p class="contact_text">I am currently seeking full-time employment in the New York metro area. This site showcases my latest work, feel free to reach out to me if you have any questions or just to say hello</p>
-            <a href="mailto:miranda.helck@gmail.com" class="buttons1"><button class="button">Email Me</button></a>
-          </article>
-      </main>
-      </div>
+      <article class="hero hero_index">
+        <h1 class="hero_slogan">Hi there!<br> My name is Miranda and I am a product designer.</h1>
+      </article>
+      <article id="work" class="work_section">
+        <div class="work_display_flex">
+        <section class="work_summary_flex title_card cardi_a">
+          <h3>Latest Work</h3>
+        </section>
+        <section class="work_summary_flex file_summary cardi_b">
+            <img src="styles/images/File_Img_Index.png" alt="File Display Image" class="summary_element display_img">
+          <div class="overlay_work">
+            <a href="file_project.html">
+            <div class="summary_text">
+              <h4 class="summary_element display_title">File</h4>
+              <p class="summary_element display_summary caption">User Research<br>Visual Design<br>User Testing</p>
+            </div></a>
+          </div>
+        </section>
+      <!--
+        <section class="work_summary_flex busybus_summary cardi_b">
+          <img src="" alt="File Display Image" class="summary_element display_img">
+          <div class="overlay_work">
+            <div class="summary_text">
+              <h3 class="summary_element display_title">Busy Bus</h3>
+              <p class="summary_element display_summary">Busy Bus Summary</p>
+            </div>
+          </div>
+        </section>
+        <section class="work_summary_flex getaway_summary cardi_a">
+          <img src="" alt="File Display Image" class="summary_element display_img">
+          <div class="overlay_work">
+            <div class="summary_text">
+              <h3 class="summary_element display_title_a">Getaway</h3>
+              <p class="summary_element display_summary_a">Getaway summary</p>
+            </div>
+          </div>
+        </section>
+        <section class="work_summary_flex dailyui_summary cardi_a">
+          <img src="" alt="File Display Image" class="summary_element display_img">
+          <div class="overlay_work">
+            <div class="summary_text">
+              <h3 class="summary_element display_title">Daily UI</h3>
+              <p class="summary_element display_summary">Daily UI summary</p>
+            </div>
+          </div>
+        </section> -->
+        </div>
+      </article>
+      <article class="bottom_blurb">
+        <h5>I am currently looking for new full-time opportunities. Feel free to get in touch if you'd like to collaborate or just to say hi!</h5>
+        <div class="button_section">
+          <div class="button">
+            <a href="styles/resume_miranda_helck_2020.pdf" download class="button_text">Download my resume <i class="fas fa-file-download button_text button_icon"></i></a>
+          </div>
+          <div class="button">
+            <a href="mailto:miranda.helck@gmail.com?subject=Hi%20there!" target="_blank" rel="noopener noreferrer" class="button_text">Send me an email <i class="far fa-paper-plane button_text button_icon"></i></a>
+          </div>
+      </article>
       <footer>
-        <ul class="footer">
-          <li class="footer_element footer_icond"><a href="https://dribbble.com/frenchnotsnails" class="footer_icon"><i class="fab fa-dribbble"></i></a></li>
-          <li class="footer_element footer_iconl"><a href="https://www.linkedin.com/in/mirandahelck/" class="footer_icon"><i class="fab fa-linkedin"></i></a></li>
-          <li class="footer_element footer_iconi"><a href="https://www.instagram.com/mirandaariannadesigns/" class="footer_icon"><i class="fab fa-instagram"></i></a></li>
-          <li class="footer_element footer_icong"><a href="https://github.com/mirandaarianna" class="footer_icon"><i class="fab fa-github-square"></i></a></li>
+        <ul class="footer footer_flex">
+          <li class="footer_element copyright"><p class="footer_text">Copyright 2020 Miranda Helck</p></li>
+          <li class="footer_element email"><a href="mailto:miranda.helck@gmail.com?subject=Hi%20there!" target="_blank" rel="noopener noreferrer" class="footer_icon"><i class="far fa-paper-plane"></i></a></li>
+          <li class="footer_element linkedin"><a href="https://www.linkedin.com/in/mirandahelck/" class="footer_icon"><i class="fab fa-linkedin-in"></i></a></li>
+          <li class="footer_element instagram"><a href="https://www.instagram.com/mirandaariannadesigns/" class="footer_icon"><i class="fab fa-instagram"></i></a></li>
+          <li class="footer_element instagram"><a href="https://dribbble.com/frenchnotsnails" class="footer_icon"><i class="fab fa-dribbble"></i></a></li>
         </ul>
       </footer>
-      <script src="myScript.js"></script>
-      <script src="https://kit.fontawesome.com/adfcfcf1c7.js" crossorigin="anonymous"></script>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154019798-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-154019798-1');
-      </script>
-    </body>
-  </html>
+    </main>
+  </body>
+</html>

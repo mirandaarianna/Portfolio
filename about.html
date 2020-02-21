@@ -1,141 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900|Playfair+Display:400,700,900&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio | Miranda Helck</title>
+    <script src="https://kit.fontawesome.com/adfcfcf1c7.js" crossorigin="anonymous"></script>
+    <script src="portfolio_script.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans|Ovo&display=swap" rel="stylesheet">
+    <title>Miranda Helck | About</title>
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <nav class="nav_bar">
-        <span id="navbar_toggle">
-            <i class="fas fa-bars"></i>
-        </span>
-        <a href="index.html"><img src="styles/images/logo-via-logohub (1).png" alt="logo" class="nav_logo"></a>
-        <ul id="nav_menu">
+        <div class="logo_and_hamburger">
+          <div class="nav_logo">
+            <a href="index.html"><h1 class="nav_logo_text">m.</h1></a>
+          </div>
+          <a href="javascript:void(0);" class="hamburger_menu" id="navbar_toggle" onclick="myFunction()">
+           <i class="fa fa-bars"></i>
+         </a>
+        </div>
+        <ul id="nav_menu" class="main-nav">
         <!---Nav bar--->
-          <li><a href="index.html#work" class="nav_link">Work</a></li>
-          <li><a href="about.html" class="nav_link">About</a></li>
-          <li><a href="index.html#contact" class="nav_link">Contact</a></li>
+          <li><a href="index.html#work" class="nav_link light_link">Work</a></li>
+          <li><a href="about.html" class="nav_link light_link">About</a></li>
+          <li><a href="mailto:miranda.helck@gmail.com" target="_blank" class="nav_link light_link">Contact Me</a></li>
         </ul>
       </nav>
-      <div class="container">
-          <article class="hero">
-            <h1 class="about_title">About Me</h1>
-            <h2 class="about_intro">I am a designer, writer, and pop culture enthusiast. I design helpful and striking digital products that promote positive change.</h2>
-          </article>
-        <main>
-          <!--- biography --->
-          <article class="about_me">
+      <div class="hero hero_about">
+        <div class="hero_slogan about_slogan">
+          <h1>About Me</h1>
+        </div>
+      </div>
+      <article class="about_me">
             <section class="biography">
-            <img src="styles/images/Me_lol.jpeg" alt="Me after a cocktail competition" class="me">
-            <div class="bio_paragraph"><p class="bio_text bio_intro">Great design is an effective, affordable, and easily utilized tool that improves lives.</p>
-            <div class="paragraph"><p class="bio_text">With a Bachelor’s degree in Classics and a past career in high-end hospitality, my non-traditional experience has given me a unique perspective on user experience design. I have crafted incredible hospitality experiences- from themed pop-up bars to full restaurant beverage programs. I designed spaces and programs to fulfill both the needs of my owners and investors and the needs of our guests.</p>
-            </div>
-            <div class="paragraph"><p class="bio_text">I knew that there was always room for growth and being able to directly interact with my customers and observe them interacting with my products has been an essential aspect in leading a successful program. I learned so much from those guest interactions and it extended beyond the conversation. I was able to empathize with the guests and appreciate their point of view, engendering a feeling of trust. It was fulfilling to offer an enjoyable experience to those that I served, in all capacities, ranging from the guest to my fellow members of my service team.</p>
-            </div>
-            <div class="paragraph"><p class="bio_text">I want to solve problems in medical, civic, and political realms. I want to use my experience and empathy to help my community, bring easy interactions and accessibility to projects that can help those in need.</p>
-            </div>
-          </div>
+              <div class="bio_intro">
+                <h5 class="about_header">Great design is an effective, affordable, and easily utilized tool that improves lives.</h5>
+              </div>
+              <div class="biography_flex">
+                <div class="bio_gi bio_img">
+                  <img src="styles/images/about_img/Me_lol.jpeg" alt="Me after a cocktail competition" class="me">
+                </div>
+                <div class="bio_gi paragraph paragraph1">
+                  <p class="bio_text">Hi there! My name is Miranda. I was born and raised in New Jersey and currently live in the New York area. In college I studied philosophy and went on to lead a successful career in hospitality. My non-traditional experience has afforded me a unique perspective on design and a natural strength in user research and interaction development. I am a creative and thoughtful problem solver looking to work with an inspired and dedicated design team.</p>
+                  <p class="bio_text">This site showcases my latest work, feel free to reach out to me if you have any questions, you’d like to collaborate, or just to say hello!</p>
+                </div>
+              </div>
+              <div class="button_section">
+                <div class="button">
+                  <a href="styles/resume_miranda_helck_2020.pdf" download class="button_text">Download my resume <i class="fas fa-file-download button_icon"></i></a>
+                </div>
+                <div class="button">
+                  <a href="mailto:miranda.helck@gmail.com?subject=Hi%20there!" target="_blank" rel="noopener noreferrer" class="button_text">Send me an email <i class="far fa-paper-plane button_icon"></i></a>
+                </div>
+              </div>
           </section>
-          <section class="experience">
-              <h3 class="exp_header">Experience</h3>
-              <!--- resume --->
-                <ul>
-                  <li>
-                    <ul>
-                      <i class="fas fa-layer-group resume_icons"></i>
-                      <li><p class="resume_header">Bloc, UX Design Program</p></li>
-                      <li><p class="resume_date">March 2019 to Present</p></li>
-                      <li><p class="duties">Learned industry best practices and design process standards with a focus on UX research, visual design, and front-end development.</p></li>
-                    </ul></li>
-                  <li>
-                    <ul>
-                      <li><i class="fas fa-cocktail resume_icons"></i></li>
-                      <li><p class="resume_header">The Franklin Bar, General Manager</p></li>
-                      <li><p class="resume_date">Philadelphia, PA</p></li>
-                      <li><p class="resume_date">February 2018 to Present</p></li>
-                      <li><p class="duties">Led a team of 20+ hospitality professionals designed service standards and enforced best hospitality practices.<br>Led menu development and design.</p></li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li><i class="fas fa-cocktail resume_icons"></i></li>
-                    <li><p class="resume_header">Kingsley, Beverage Manager</p></li>
-                    <li><p class="resume_date">New York, NY</p></li>
-                    <li><p class="resume_date">February 2016 to January 2018</p></li>
-                    <li><p class="duties">Led menu development and design including cocktail creation, wine, spirits, and beer offerings. Designed steps of service in line with hospitality standards.</p></li>
-                  </ul>
-                </li>
-              </ul>
-          </section>
-          <section class="skills">
-            <h3 class="skills_title">Skills</h3>
-              <ul>
-                <li>
-                  <ul>
-                    <li><i class="fas fa-search resume_icons"></i></li>
-                    <li><p class="resume_header">Research</p></li>
-                    <li><p class="skills_list">Survey Writing</p></li>
-                    <li><p class="skills_list">Persona Creating</p></li>
-                    <li><p class="skills_list">Story Writing</p></li>
-                    <li><p class="skills_list">Card Sorting</p></li>
-                    <li><p class="skills_list">Brainstorming</p></li>
-                    <li><p class="skills_list">Wireframing</p></li>
-                    <li><p class="skills_list">User Testing</p></li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li><i class="fas fa-crop resume_icons"></i></li>
-                    <li><p class="resume_header">Visual</p></li>
-                    <li><p class="skills_list">Figma</p></li>
-                    <li><p class="skills_list">Sketch</p></li>
-                    <li><p class="skills_list">Invision</p></li>
-                    <li><p class="skills_list">Adobe XD</p></li>
-                    <li><p class="skills_list">Photoshop</p></li>
-                    <li><p class="skills_list">Illustrator</p></li>
-                    <li><p class="skills_list">Pen and paper</p></li>
-                  </ul>
-                </li>
-                <li>
-                    <ul>
-                      <li><i class="fas fa-code resume_icons"></i></li>
-                      <li><p class="resume_header">Frontend</p></li>
-                      <li><p class="skills_list">HTML5</p></li>
-                      <li><p class="skills_list">CSS3</p></li>
-                      <li><p class="skills_list">Javascript</p></li>
-                      <li><p class="skills_list">Git</p></li>
-                      <li><p class="skills_list">Github</p></li>
-                      <li><p class="skills_list">Chrome Dev Tools</p></li>
-                    </ul>
-                  </li>
-                </ul>
-              <a href="styles/images/Resume-Miranda Helck.pdf" download class="buttons1"><button class="button">Download My Resume</button></a>
+          <section class="links">
+            <h5 class="about_header">Press</h5>
+            <p>If you are interested in my work in hospitality, below are links to some press I received for my work in the restaurant industry.</p>
+            <ul class="press_links_list">
+              <li><a href="https://philly.thedrinknation.com/articles/read/16699-Behind-the-Bar-Miranda-Helck-of-The-Franklin">"Behind the Bar: Miranda Helck from The Franklin"</a><p class="link_list_details">Drink Philly March 2018</li>
+              <li><a href="https://www.inquirer.com/philly/food/garden-cocktail-recipes-vedge-franklin-bar-20180620.html">"Garden-inspired cocktails bring veggies from the kitchen to the bar"</a><p class="link_list_details">Philadelphia Inquirer June 2018</p></li>
+              <li><a href="https://www.liquor.com/articles/naked-grouse-miranda-helck-goes-to-denver/">"Bartender Miranda Helck Goes to Denver"</a><p class="link_list_details">Liquor.com September 2018</p></li>
+              <li><a href="https://www.liquor.com/recipes/hennessy-shiso-unusual/">"Shiso Unusual"</a><p class="link_list_details">Liquor.com June 2017</p></li>
+              <li><a href="https://thirstymag.com/titus-andromedon-kingsley/">"Titus Andromedon at Kingsley in the East Village"</a><p class="link_list_details">Thirsty.com March 2017</p></li>
+            </ul>
           </section>
         </article>
-      </main>
-    </div>
-    <ul class="footer">
-      <li class="footer_element footer_icond"><a href="https://dribbble.com/frenchnotsnails" class="footer_icon"><i class="fab fa-dribbble"></i></a></li>
-      <li class="footer_element footer_iconl"><a href="https://www.linkedin.com/in/mirandahelck/" class="footer_icon"><i class="fab fa-linkedin"></i></a></li>
-      <li class="footer_element footer_iconi"><a href="https://www.instagram.com/mirandaariannadesigns/" class="footer_icon"><i class="fab fa-instagram"></i></a></li>
-      <li class="footer_element footer_icong"><a href="https://github.com/mirandaarianna" class="footer_icon"><i class="fab fa-github-square"></i></a></li>
-    </ul>
-  </footer>
-      <script src="myScript.js"></script>
-      <script src="https://kit.fontawesome.com/adfcfcf1c7.js" crossorigin="anonymous"></script>
-      <script src="https://kit.fontawesome.com/adfcfcf1c7.js" crossorigin="anonymous"></script>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154019798-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-154019798-1');
-      </script>
+      <footer>
+        <ul class="footer footer_flex">
+          <li class="footer_element copyright"><p class="footer_text">Copyright 2020 Miranda Helck</p></li>
+          <li class="footer_element email"><a href="mailto:miranda.helck@gmail.com?subject=Hi%20there!" target="_blank" rel="noopener noreferrer" class="footer_icon"><i class="far fa-paper-plane"></i></a></li>
+          <li class="footer_element linkedin"><a href="https://www.linkedin.com/in/mirandahelck/" class="footer_icon"><i class="fab fa-linkedin-in"></i></a></li>
+          <li class="footer_element instagram"><a href="https://www.instagram.com/mirandaariannadesigns/" class="footer_icon"><i class="fab fa-instagram"></i></a></li>
+          <li class="footer_element instagram"><a href="https://dribbble.com/frenchnotsnails" class="footer_icon"><i class="fab fa-dribbble"></i></a></li>
+        </ul>
+      </footer>
+    </main>
   </body>
-  </html>
+</html>
