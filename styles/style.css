@@ -103,11 +103,12 @@ html {
 
   .hero {
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       display: flex;
       justify-content: space-around;
       align-content: center;
       width: 100%;
+      margin-bottom: 3.6rem;
     }
 
   .hero_slogan {
@@ -907,8 +908,9 @@ html {
   }
 
   /* about me*/
-  hero_about {
+  .hero_about {
     height: 100vh;
+
   }
   .about_slogan {
     margin-top: 40%;
