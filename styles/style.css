@@ -190,6 +190,7 @@ html {
   .nav_link {
     margin-bottom: .8rem;
     color: #222559;
+    font-weight: bold;
   }
 
   .logo_and_hamburger {
@@ -436,7 +437,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
 }
 
 .survey {
@@ -444,11 +445,13 @@ html {
   margin-bottom: 2.4rem;
   background-color: rgba(177, 179, 204, 0.2);
   padding: 1.6rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .goal_title {
   font-size: 1.8rem;
-  font-weight: medium;
+  font-weight: bold;
 }
 
 /*comp. analysis*/
@@ -456,7 +459,7 @@ html {
 .swot_analysis {
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 1.6rem;
   flex-direction: column;
 }
@@ -467,6 +470,8 @@ html {
   border-radius: 5px;
   background-color: rgba(177, 179, 204, 0.2);
   padding: 1.6rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .responsive_personas {
@@ -507,7 +512,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
 }
 
 .flow_flex {
@@ -852,6 +857,7 @@ html {
   /* survey */
   .survey_flex {
     flex-flow: row wrap;
+    align-items: baseline;
   }
 
   .survey {
@@ -865,6 +871,7 @@ html {
 
   .swot_analysis {
     flex-flow: row wrap;
+    align-items: baseline;
   }
 
   .swot {
@@ -875,6 +882,7 @@ html {
 
   .responsive_personas {
     flex-direction: row;
+    align-items: baseline;
   }
 
   .persona {
@@ -889,6 +897,7 @@ html {
   /* user flows */
   .user_flows {
     flex-flow: row wrap;
+    align-items: baseline;
   }
 
   .flow_flex {
