@@ -13,14 +13,14 @@ html {
 /* typography mobile */
   a {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-decoration: none;
     font-weight: bolder;
     color: #18191B;
   }
 
   a:hover {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   h1 {
@@ -67,14 +67,14 @@ html {
 
   p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     max-width: 40rem;
     margin-bottom: 1.6rem;
     color: #18191B;
   }
 
   .caption {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: lighter;
     text-align: center;
   }
@@ -82,6 +82,8 @@ html {
   /* general structure mobile */
 
   .container {
+  width: 100%
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #F7F7F1;
@@ -108,7 +110,7 @@ html {
       justify-content: space-around;
       align-content: center;
       width: 100%;
-      margin-bottom: 3.6rem;
+      margin-bottom: 4rem;
     }
 
   .hero_slogan {
@@ -136,7 +138,7 @@ html {
     background-color: #F7F7F1;
     border: .2rem solid #181A40;
     padding: .8rem 1.6rem;
-    margin: 1.6rem 3.2rem;
+    margin: 1.6rem 4rem;
     display: inline-block;
     transition: all 0.4s ease 0s;
    }
@@ -254,7 +256,7 @@ html {
 }
 .work_section {
   margin-top: 0rem;
-  margin-bottom: 4.8rem;
+  margin-bottom: 8rem;
 }
 
 .hero_index {
@@ -266,7 +268,7 @@ html {
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.6rem;
 }
 
 .work_summary_flex {
@@ -275,7 +277,7 @@ html {
     flex-direction: column;
     justify-content: space-around;
     width: 80%;
-    margin-bottom: .8rem;
+    margin-bottom: 4rem;
     padding: 2.4rem;
 }
 
@@ -336,6 +338,9 @@ html {
   color: #181A40;
 }
 
+.bottom_blurb {
+  margin-bottom: 14.4rem;
+}
 
   /* case study page specs. mobile */
 
@@ -485,6 +490,8 @@ html {
 .persona_info {
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .persona_img {
@@ -557,10 +564,15 @@ html {
   flex-direction: row;
 }
 
+.branding_flex2 {
+  justify-content: space-around;
+  flex-direction: column;
+}
 /* user testing */
 
 .testing_img {
   width: 80%;
+  margin-top: 1.6rem;
 }
 
 .tasks {
@@ -650,11 +662,11 @@ html {
   /* typography */
 
   a {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   a:hover {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   h1 {
@@ -686,7 +698,7 @@ html {
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     max-width: 62rem;
     margin-bottom: 2.4rem;
   }
