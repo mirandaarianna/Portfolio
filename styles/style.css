@@ -15,7 +15,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: bold;
     color: #18191B;
   }
 
@@ -133,6 +133,9 @@ html {
     margin-bottom: 4rem;
   }
 
+  th {
+    padding: .8rem;
+  }
   .button {
     color: #181A40;
     background-color: #F7F7F1;
@@ -184,7 +187,8 @@ html {
   .nav_bar {
     width: 100%;
     position: absolute;
-    background-color: rgba(188, 190, 238, 0.4);
+    background-color: rgba(188, 190, 238, 0.6);
+    padding-bottom: .8rem;
  }
 
   .nav_link {
@@ -313,7 +317,7 @@ html {
   position: absolute;
   text-align: center;
   background-color: rgba(188, 190, 238, 0.8);
-  padding: .8rem 1.6rem;
+  padding: 1.6rem 2.4rem;
 }
 
 .display_img {
@@ -337,10 +341,14 @@ html {
 
 .display_summary{
   color: #181A40;
+  line-height: 1.5;
 }
 
+.blurb {
+  margin-bottom: 16rem;
+}
 .bottom_blurb {
-  margin-bottom: 14.4rem;
+  margin-bottom: 16rem;
 }
 
   /* case study page specs. mobile */
@@ -505,6 +513,7 @@ html {
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2.4rem;
 }
 
 /* user flows */
@@ -802,6 +811,9 @@ html {
     padding: 3.2rem;
   }
 
+  .summary_text {
+    padding: 2.4rem, 3.2rem;
+  }
 
   /* case study page specs. */
 
@@ -882,7 +894,7 @@ html {
 
   .responsive_personas {
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
   }
 
   .persona {
@@ -890,8 +902,9 @@ html {
   }
 
   .persona_img {
-    width: 80%;
-    height: auto;
+    height: 32rem;
+    width: 32rem;
+    margin-bottom: 4rem;
   }
 
   /* user flows */
@@ -930,7 +943,7 @@ html {
 
   /* about me*/
   .hero_about {
-    height: 100vh;
+    height: 100%;
 
   }
   .about_slogan {
@@ -939,4 +952,9 @@ html {
   .biography_flex {
     flex-direction: row;
   }
+}
+
+.me {
+  height: 50%;
+  object-fit: contain;
 }
